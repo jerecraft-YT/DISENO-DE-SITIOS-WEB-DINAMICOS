@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos Funcionales (Documento y Ventana)</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            padding: 20px;
+            min-height: 150vh; 
+        }
+        #log-area { 
+            margin-top: 20px; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            min-height: 100px;
+            white-space: pre-wrap; 
+            background-color: #f9f9f9;
+        }
+        .espacio {
+            height: 500px;
+            background-color: #e0e0ff;
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejemplos de Eventos Funcionales</h1>
+    
+    <h1>Evento de Ventana</h1>
+    <p id="demo"></p>
+    
+    <script>
+    window.addEventListener("load", function() {
+      document.getElementById("demo").innerHTML = "La ventana ha cargado";
+    });
+
+    window.addEventListener("resize", function() {
+      document.getElementById("demo").innerHTML = "La ventana ha sido redimensionada";
+    });
+    </script>
+
+    <div class="espacio">
+        <h3>Desplázate hacia abajo para activar el evento 'scroll'</h3>
+    </div>
+
+    <script src="eventos.js"></script>
+</body>
+</html>
