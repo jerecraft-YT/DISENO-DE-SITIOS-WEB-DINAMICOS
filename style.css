@@ -109,32 +109,8 @@
             grid-column: span 2;
         }
         
-        .history {
-            margin-top: 20px;
-            color: white;
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            border-radius: 10px;
-            width: 320px;
-        }
-        
-        .history h2 {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        
-        .history-list {
-            max-height: 150px;
-            overflow-y: auto;
-        }
-        
-        .history-item {
-            padding: 5px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
         @media (max-width: 1000px) {
-            .calculator, .history {
+            .calculator{
                 width: 100%;
             }
         }
