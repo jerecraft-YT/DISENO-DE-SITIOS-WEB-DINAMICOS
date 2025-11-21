@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Ejemplo BOM</title>
+</head>
+<body>
+  <h1>Ejemplo BOM</h1>
+  <p>Host: <span id="host"></span></p>
+  <p>URL completa: <span id="url"></span></p>
+  <p>User-agent: <span id="ua"></span></p>
+  <p>Pantalla: <span id="screen"></span></p>
+
+  <button id="boton-ubicar">Mostrar ubicación actual y preguntar redirigir</button>
+  <button id="boton-volver">Simular "volver" (history.back)</button>
+  <button id="boton-popup">Abrir nueva ventana (window.open)</button>
+  <button id="boton-storage">Guardar/leer localStorage</button>
+
+  <script>
+    // Acceder a objetos del BOM (window es global)
+    document.getElementById('host').textContent = window.location.host;
+    document.getElementById('url').textContent = window.location.href;
+    document.getElementById('ua').textContent = navigator.userAgent;
+    document.getElementById('screen').textContent = `ancho=${screen.width} alto=${screen.height}`;
+
+    // location: leer y (opcionalmente) redirigir
+    document.getElementById('boton-ubicar').addEventListener('click', () => {
+      const loc = window.location;
+      // mostrar con alert (BOM: alert)
+      alert(`Estás en:\nHost: ${loc.host}\nPath: ${loc.pathname}`);
+      // preguntar (confirm) para redirigir a ejemplo.com (solo si el usuario acepta)
+      const quiere = confirm('¿Quieres ir a https://example.com ?');
+      if (quiere) {
+        window.location.href = 'https://example.com';
+      }
+    });
+
+    // history: navegar por el historial
+    document.getElementById('boton-volver').addEventListener('click', () => {
+      // intenta retroceder (si no hay historial, no sucede nada)
+      if (history.length > 1) history.back();
+      else alert('No hay historial para volver.');
+    });
+
+    // window.open para mostrar manejo de ventanas
+    document.getElementById('boton-popup').addEventListener('click', () => {
+      const nueva = window.open('', '_blank', 'width=400,height=300');
+      if (nueva) {
+        nueva.document.write('<p>Esta es una ventana nueva creada con window.open()</p>');
+        nueva.document.title = 'Ventana nueva';
+      } else {
+        alert('El navegador bloqueó la apertura de la ventana (popup blocker).');
+      }
+    });
+
+    // localStorage (parte del objeto window)
+    document.getElementById('boton-storage').addEventListener('click', () => {
+      const clave = 'ultimaVisita';
+      const ahora = new Date().toISOString();
+      // Guardar
+      window.localStorage.setItem(clave, ahora);
+      // Leer y mostrar
+      const leido = window.localStorage.getItem(clave);
+      alert('Se guardó en localStorage: ' + leido);
+      console.log('localStorage:', { [clave]: leido });
+    });
+
+    // ejemplo con setTimeout (temporal)
+    setTimeout(() => console.log('Mensaje en consola después de 2 segundos (setTimeout, BOM)'), 2000);
+  </script>
+</body>
+</html>

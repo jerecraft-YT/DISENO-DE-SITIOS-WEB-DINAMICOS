@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Ejemplo DOM</title>
+  <style>
+    .tarea { padding: 6px; margin: 4px 0; border: 1px solid #ddd; border-radius: 6px; }
+    .hecha { text-decoration: line-through; color: #777; }
+  </style>
+</head>
+<body>
+  <h1>Lista de tareas (DOM)</h1>
+
+  <input id="nuevaTarea" placeholder="Escribe una tarea..." />
+  <button id="btnAgregar">Agregar</button>
+
+  <ul id="lista"></ul>
+
+  <script>
+    // Referencias a nodos (lectura del DOM)
+    const input = document.getElementById('nuevaTarea');
+    const btn = document.getElementById('btnAgregar');
+    const lista = document.getElementById('lista');
+
+    // Función para crear un <li> y añadirlo al DOM
+    function agregarTarea(texto) {
+      const li = document.createElement('li');        // crear nodo
+      li.className = 'tarea';
+      li.textContent = texto;
+
+      // botón para marcar como hecha
+      const btnHecha = document.createElement('button');
+      btnHecha.textContent = '✓';
+      btnHecha.style.marginLeft = '8px';
+
+      // botón para eliminar
+      const btnEliminar = document.createElement('button');
+      btnEliminar.textContent = 'Eliminar';
+      btnEliminar.style.marginLeft = '6px';
+
+      // Eventos en nodos
+      btnHecha.addEventListener('click', () => {
+        li.classList.toggle('hecha');                 // modificar clases en el DOM
+      });
+
+      btnEliminar.addEventListener('click', () => {
+        li.remove();                                  // eliminar nodo del DOM
+      });
+
+      li.appendChild(btnHecha);
+      li.appendChild(btnEliminar);
+
+      lista.appendChild(li);                          // insertar nodo en la lista
+    }
+
+    // Manejar clic del botón (evento)
+    btn.addEventListener('click', () => {
+      const texto = input.value.trim();
+      if (!texto) return;
+      agregarTarea(texto);
+      input.value = '';
+      input.focus();
+    });
+
+    // Ejemplo de búsqueda y modificación: colorear primeros 2 items cuando se presiona Enter
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const items = document.querySelectorAll('#lista .tarea');
+        items.forEach((it, idx) => {
+          if (idx < 2) it.style.background = '#f0f8ff';
+          else it.style.background = '';
+        });
+      }
+    });
+
+    // Crear algunas tareas iniciales
+    ['Comprar leche', 'Enviar informe'].forEach(agregarTarea);
+  </script>
+</body>
+</html>
