@@ -7,8 +7,8 @@ window.addEventListener('scroll', function() {
     console.log(`Posición de desplazamiento (Scroll): ${scrollY}px`);
 
     if (scrollY > 200) {
-        document.body.style.backgroundColor = 'green';
+        document.body.style.backgroundColor = 'rgba(211, 157, 96, 1)';
     } else {
-        document.body.style.backgroundColor = 'white';
+        document.body.style.backgroundColor = 'rgba(0, 195, 255, 0)';
     }
 });
