@@ -1,0 +1,57 @@
+
+h1{ 
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-image: url("https://www.tuexperto.com/wp-content/uploads/2022/01/fondos-de-pantalla-para-pc-de-naturaleza-2-1200x675.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.SesionContainer{
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 25px;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px rgba(156, 156, 156,0.35);
+    backdrop-filter: blur(5px);
+}
+
+input{
+    padding: 5px 10px;
+    width: 330px;
+    margin-top: 15px;
+    border-radius: 10px;
+    height: 30px;
+    border: 1px solid rgb(153, 153, 153);
+}
+
+button{
+    color: white;
+    height: 40px;
+    background-color: #0078ff;
+    margin-top: 20px;
+    width: 350px;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover{
+    background-color: #459cff;
+    transition: background-color 0.2s ease;
+}
+
+button:active{
+    background-color: #3173be;
+    transition: background-color 0.1s ease;
+}
+
