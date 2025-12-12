@@ -1,0 +1,134 @@
+{
+    "Papa Rellena": {
+        "Info": {
+            "duracion": "45min",
+            "porciones": "4 porciones"
+        },
+        "Ingredientes": [
+            "1 kg de papa amarilla",
+            "300 g de carne molida",
+            "1 cebolla picada",
+            "1 huevo duro picado",
+            "Aceitunas picadas",
+            "Ajo molido",
+            "Comino",
+            "Sal y pimienta",
+            "Aceite para freír"
+        ],
+        "Procedimiento": [
+            "Hervir las papas y hacer un puré espeso.",
+            "Sofreír cebolla, ajo, carne y sazonar.",
+            "Armar la masa de papa y rellenar con carne, huevo y aceituna.",
+            "Formar las papas y freír hasta dorar."
+        ],
+        "Imagen": "https://www.comeperuano.pe/wp-content/uploads/2019/05/Papa-rellena-con-mariscos-min.jpg",
+        "color": "#F7F6D2"
+   
+    },
+
+    "Ceviche": {
+        "Info": {
+            "duracion": "25min",
+            "porciones": "3 porciones"
+        },
+        "Ingredientes": [
+            "500 g de pescado fresco",
+            "Jugo de limón",
+            "Cebolla roja en pluma",
+            "Ají limo",
+            "Culantro picado",
+            "Sal",
+            "Pimienta",
+            "Maíz cancha",
+            "Camote hervido"
+        ],
+        "Procedimiento": [
+            "Cortar el pescado en cubos.",
+            "Mezclar con sal, limón, ají y cebolla.",
+            "Agregar culantro y reposar brevemente.",
+            "Servir con camote y cancha."
+        ],
+        "Imagen": "https://cdn0.recetasgratis.net/es/posts/7/4/1/ceviche_peruano_18147_600_square.jpg",
+        "color": "#D1F982"
+    },
+
+    "Lomo Saltado": {
+        "Info": {
+            "duracion": "40min",
+            "porciones": "4 porciones"
+        },
+        "Ingredientes": [
+            "500 g de lomo de res",
+            "Cebolla",
+            "Tomate",
+            "Ají amarillo",
+            "Sillao",
+            "Vinagre",
+            "Papas fritas",
+            "Arroz blanco",
+            "Sal y pimienta"
+        ],
+        "Procedimiento": [
+            "Cortar la carne en tiras y saltear a fuego fuerte.",
+            "Agregar cebolla, tomate y ají.",
+            "Incorporar sillao y vinagre.",
+            "Mezclar con papas fritas y servir con arroz."
+        ],
+        "Imagen": "https://es.cravingsjournal.com/wp-content/uploads/2021/08/lomo-saltado-2-500x500.jpg",
+        "color": "#59702B"
+    },
+
+    "Aji de Gallina": {
+        "Info": {
+            "duracion": "50min",
+            "porciones": "4 porciones"
+        },
+        "Ingredientes": [
+            "Pechuga de pollo deshilachada",
+            "Pan remojado en leche",
+            "Ají amarillo molido",
+            "Queso parmesano",
+            "Nuez moscada",
+            "Cebolla",
+            "Ajo",
+            "Papas sancochadas",
+            "Huevos duros",
+            "Arroz blanco"
+        ],
+        "Procedimiento": [
+            "Sofreír la cebolla y el ajo.",
+            "Agregar el ají amarillo y mezclar.",
+            "Incorporar pollo deshilachado y el pan remojado.",
+            "Cocinar hasta espesar y servir con papa y arroz."
+        ],
+        "Imagen": "https://cdn0.recetasgratis.net/es/posts/4/3/0/aji_de_gallina_peruano_78034_600_square.jpg",
+        "color": "#4A4EB0"
+    },
+
+    "Arroz con Pollo": {
+        "Info": {
+            "duracion": "60min",
+            "porciones": "5 porciones"
+        },
+        "Ingredientes": [
+            "Piezas de pollo",
+            "Culantro licuado",
+            "Cebolla",
+            "Ajo",
+            "Pimiento",
+            "Arvejas",
+            "Zanahoria",
+            "Arroz",
+            "Cerveza o agua",
+            "Sal y pimienta"
+        ],
+        "Procedimiento": [
+            "Sazonar y dorar el pollo.",
+            "Sofreír cebolla, ajo y culantro licuado.",
+            "Agregar pollo, verduras y arroz.",
+            "Cocinar hasta que el arroz esté listo."
+        ],
+        "Imagen": "https://www.eatperu.com/wp-content/uploads/2020/03/arroz-con-pollo-peruvian-dish-500x500.jpg",
+        "color": "#6E4A64"
+    }
+}

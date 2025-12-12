@@ -10,7 +10,7 @@ function logear(){
     }
     else{
         msg.innerText = "Datos no validos";
-        msg.style.color = "white";
+        msg.style.color = "black";
         msg.style.transition = "color 2.5s easing"
     }
 }
