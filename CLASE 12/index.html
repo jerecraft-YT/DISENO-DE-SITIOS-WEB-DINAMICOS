@@ -116,18 +116,51 @@
     /* VISTA DE DETALLE (oculta por defecto) */
     .detalle-container {
         display: none;
-        animation: fadeIn 0.5s ease;
     }
 
+    /* CONTENEDOR DINÁMICO CON ANIMACIONES */
     .ContenedorRecetas{
         border-radius: 15px;
         padding: 20px;
         margin-bottom: 25px;
-        min-height: 1250px;
         box-shadow: 0 8px 25px rgba(0,0,0,0.5);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         position: relative;
+        transition: all 0.5s ease;
+        opacity: 1;
+        transform: translateY(0);
+        min-height: auto;
+        max-height: 95vh;
+        overflow-y: auto;
+    }
+
+    /* Animación de entrada del contenedor */
+    .ContenedorRecetas.fade-in {
+        animation: fadeInUp 0.5s ease forwards;
+    }
+
+    /* Animación de salida del contenedor */
+    .ContenedorRecetas.fade-out {
+        animation: fadeOutDown 0.4s ease forwards;
+    }
+
+    /* Clase para altura dinámica */
+    .ContenedorRecetas.dynamic-height {
+        height: auto !important;
+        min-height: 400px;
+        max-height: none;
+    }
+
+    /* Ocultar contenido durante la animación */
+    .ContenedorRecetas .contenido-receta {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    .ContenedorRecetas.animating .contenido-receta {
+        opacity: 0;
     }
 
     .ContenedorElemento{
@@ -138,6 +171,14 @@
         padding: 20px;
         text-align: left;
         margin-bottom: 15px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Animación de elementos individuales */
+    .ContenedorElemento.animate-in {
+        animation: slideInRight 0.5s ease forwards;
+        animation-delay: calc(var(--element-order) * 0.1s);
+        opacity: 0;
     }
 
     .recetaCentrar{
@@ -148,11 +189,19 @@
         font-weight: bold;
         margin-bottom: 15px;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Animación del título */
+    .recetaCentrar.animate-in {
+        animation: bounceIn 0.6s ease forwards;
+        opacity: 0;
     }
 
     .ingredientes-lista, .procedimiento-lista {
         list-style-type: none;
         padding-left: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
     .ingredientes-lista li, .procedimiento-lista li {
@@ -161,6 +210,15 @@
         color: #333;
         padding: 8px 0;
         border-bottom: 1px solid rgba(255,255,255,0.2);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Animación para elementos de lista */
+    .ingredientes-lista li, .procedimiento-lista li {
+        animation: fadeInListItem 0.5s ease forwards;
+        animation-delay: calc(var(--list-item-order) * 0.05s);
+        opacity: 0;
+        transform: translateX(-10px);
     }
 
     .ingredientes-lista li:before {
@@ -193,6 +251,122 @@
         top: 5px;
     }
 
+    /* ANIMACIONES DEFINIDAS */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeOutDown {
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            opacity: 0;
+            transform: translateX(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes bounceIn {
+        0% {
+            opacity: 0;
+            transform: scale(0.3);
+        }
+        50% {
+            opacity: 0.7;
+            transform: scale(1.05);
+        }
+        80% {
+            opacity: 1;
+            transform: scale(0.95);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    @keyframes fadeInListItem {
+        from {
+            opacity: 0;
+            transform: translateX(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes cardAppear {
+        from { 
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to { 
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Animación de cambio de receta */
+    .cambiando-receta {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .cambiando-receta::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, 
+            transparent, 
+            rgba(255, 255, 255, 0.4), 
+            transparent);
+        z-index: 1;
+        animation: swipeEffect 0.8s ease;
+    }
+
+    @keyframes swipeEffect {
+        0% {
+            left: -100%;
+        }
+        50%, 100% {
+            left: 100%;
+        }
+    }
+
     /* BOTONES */
     button{
         color: white;
@@ -215,12 +389,24 @@
         transform: translateY(-2px);
     }
 
+    button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: none !important;
+    }
+
     .button-container{
         display: flex;
         justify-content: center;
         gap: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    .button-container.hidden {
+        opacity: 0;
     }
 
     .volver-btn {
@@ -246,23 +432,7 @@
         z-index: -1;
     }
 
-    /* ANIMACIONES */
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-
-    @keyframes cardAppear {
-        from { 
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        to { 
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
+    /* Animación de tarjetas en cuadrícula */
     .receta-card {
         animation: cardAppear 0.5s ease forwards;
         animation-delay: calc(var(--card-order) * 0.1s);
@@ -295,6 +465,15 @@
             width: 90%;
             max-width: 300px;
         }
+        
+        .ContenedorRecetas {
+            padding: 15px;
+            max-height: 85vh;
+        }
+        
+        .recetaCentrar {
+            font-size: 28px;
+        }
     }
 
     @media (max-width: 480px) {
@@ -309,6 +488,30 @@
         h1 {
             font-size: 28px;
         }
+        
+        .ContenedorRecetas {
+            padding: 10px;
+            max-height: 80vh;
+        }
+    }
+
+    /* Scrollbar personalizado */
+    .ContenedorRecetas::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .ContenedorRecetas::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+    }
+
+    .ContenedorRecetas::-webkit-scrollbar-thumb {
+        background: rgba(0, 120, 255, 0.5);
+        border-radius: 10px;
+    }
+
+    .ContenedorRecetas::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 120, 255, 0.7);
     }
     </style>
 </head>
@@ -326,25 +529,27 @@
         <!-- VISTA DE DETALLE -->
         <div id="detail-view" class="detalle-container">
             <div class="ContenedorRecetas" id="ContenedorRecetas">
-                <h2 id="recetaTitulo" class="recetaCentrar">Titulo</h2>
-                <div class="ContenedorElemento" id="infoReceta">
-                    <p id="duracion"></p>
-                    <p id="porciones"></p>
-                </div>
-                <h2 class="recetaCentrar">Ingredientes</h2>
-                <div class="ContenedorElemento">
-                    <ul id="ingredientes" class="ingredientes-lista"></ul>
-                </div>
-                <h2 class="recetaCentrar">Procedimiento</h2>
-                <div class="ContenedorElemento">
-                    <ol id="procedimiento" class="procedimiento-lista"></ol>
+                <div class="contenido-receta">
+                    <h2 id="recetaTitulo" class="recetaCentrar">Titulo</h2>
+                    <div class="ContenedorElemento" id="infoReceta">
+                        <p id="duracion"></p>
+                        <p id="porciones"></p>
+                    </div>
+                    <h2 class="recetaCentrar" id="tituloIngredientes">Ingredientes</h2>
+                    <div class="ContenedorElemento">
+                        <ul id="ingredientes" class="ingredientes-lista"></ul>
+                    </div>
+                    <h2 class="recetaCentrar" id="tituloProcedimiento">Procedimiento</h2>
+                    <div class="ContenedorElemento">
+                        <ol id="procedimiento" class="procedimiento-lista"></ol>
+                    </div>
                 </div>
             </div>
             
-            <div class="button-container">
-                <button onclick="back()" class="nav-btn">Anterior</button>
-                <button onclick="volverAGrid()" class="volver-btn">Volver a la Cuadrícula</button>
-                <button onclick="next()" class="nav-btn">Siguiente</button>
+            <div class="button-container" id="buttonContainer">
+                <button onclick="back()" class="nav-btn" id="btnBack">Anterior</button>
+                <button onclick="volverAGrid()" class="volver-btn" id="btnVolver">Volver a la Cuadrícula</button>
+                <button onclick="next()" class="nav-btn" id="btnNext">Siguiente</button>
             </div>
         </div>
     </div>
@@ -353,6 +558,7 @@
     let recetasData = null;
     let actualItem = 0;
     let tamañoLista = 0;
+    let isAnimating = false;
     
     // Elementos de la vista de detalle
     const nombreReceta = document.getElementById("recetaTitulo");
@@ -361,7 +567,14 @@
     const ingredientesLista = document.getElementById("ingredientes");
     const procedimientoLista = document.getElementById("procedimiento");
     const contenedorGeneral = document.getElementById("ContenedorRecetas");
+    const contenidoReceta = document.querySelector(".contenido-receta");
     const elementosContenedor = document.querySelectorAll(".ContenedorElemento");
+    const tituloIngredientes = document.getElementById("tituloIngredientes");
+    const tituloProcedimiento = document.getElementById("tituloProcedimiento");
+    const buttonContainer = document.getElementById("buttonContainer");
+    const btnBack = document.getElementById("btnBack");
+    const btnNext = document.getElementById("btnNext");
+    const btnVolver = document.getElementById("btnVolver");
     
     // Vistas
     const gridView = document.getElementById("grid-view");
@@ -372,7 +585,6 @@
     
     async function cargarRecetas() {
         try {
-            // Si no existe el archivo recetas.json, usar datos de ejemplo
             const response = await fetch('./recetas.json');
             recetasData = await response.json();
             inicializarApp();
@@ -380,33 +592,79 @@
             console.error('Error cargando JSON, usando datos de ejemplo:', error);
             // Datos de ejemplo si no existe recetas.json
             recetasData = {
-                "Ceviche Peruano": {
+                "Papa Rellena": {
                     "Info": {
-                        "duracion": "30 minutos",
-                        "porciones": "4 personas",
-                        "descripcion": "Plato bandera del Perú, fresco y delicioso"
+                        "duracion": "45min",
+                        "porciones": "4 porciones",
+                        "dificultad": "Media",
+                        "categoria": "Aperitivo",
+                        "calorias": "350 por porción",
+                        "descripcion": "Deliciosas papas rellenas de carne, un clásico de la gastronomía peruana"
                     },
                     "Ingredientes": [
-                        "1 kg de pescado fresco (corvina o lenguado)",
-                        "10 limones verdes",
-                        "2 cebollas rojas",
-                        "1 ají limo",
-                        "Cilantro picado",
+                        "1 kg de papa amarilla",
+                        "300 g de carne molida",
+                        "1 cebolla picada",
+                        "2 dientes de ajo picados",
+                        "1 huevo duro picado",
+                        "8 aceitunas negras picadas",
+                        "1/4 taza de pasas",
+                        "2 cucharadas de ají panca",
+                        "1 cucharadita de comino",
                         "Sal y pimienta al gusto",
-                        "Camote sancochado",
-                        "Choclo sancochado",
-                        "Hojas de lechuga"
+                        "Aceite vegetal para freír",
+                        "Harina para empanizar"
                     ],
                     "Procedimiento": [
-                        "Cortar el pescado en cubos medianos y colocarlo en un recipiente",
-                        "Exprimir los limones y verter el jugo sobre el pescado",
-                        "Agregar la cebolla cortada en juliana, el ají limo picado y el cilantro",
-                        "Mezclar suavemente y sazonar con sal y pimienta",
-                        "Dejar marinar por 10-15 minutos",
-                        "Servir acompañado de camote, choclo y lechuga"
+                        "Hervir las papas con cáscara hasta que estén tiernas, pelar y hacer un puré espeso.",
+                        "En una sartén, calentar aceite y sofreír la cebolla y el ajo hasta que estén transparentes.",
+                        "Agregar la carne molida y cocinar hasta que cambie de color.",
+                        "Incorporar el ají panca, comino, sal y pimienta. Cocinar por 5 minutos.",
+                        "Añadir las pasas, aceitunas y huevo duro. Mezclar bien y retirar del fuego.",
+                        "Tomar porciones de puré, formar una tortilla y colocar el relleno en el centro.",
+                        "Cerrar dándole forma ovalada y pasar por harina.",
+                        "Freír en aceite caliente hasta que estén doradas por ambos lados.",
+                        "Escurrir sobre papel absorbente y servir caliente."
                     ],
-                    "Imagen": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-                    "color": "#4CAF50"
+                    "Imagen": "https://www.comeperuano.pe/wp-content/uploads/2019/05/Papa-rellena-con-mariscos-min.jpg",
+                    "color": "#F7F6D2"
+                },
+                "Ceviche": {
+                    "Info": {
+                        "duracion": "25min",
+                        "porciones": "3 porciones",
+                        "dificultad": "Fácil",
+                        "categoria": "Plato Principal",
+                        "calorias": "280 por porción",
+                        "descripcion": "El plato bandera del Perú, fresco y lleno de sabor"
+                    },
+                    "Ingredientes": [
+                        "500 g de pescado fresco (corvina o lenguado)",
+                        "12 limones verdes",
+                        "2 cebollas rojas grandes",
+                        "2 ajíes limo picados",
+                        "1 manojo de culantro picado",
+                        "Sal al gusto",
+                        "Pimienta al gusto",
+                        "1 cucharadita de ají amarillo molido",
+                        "1 camote grande hervido",
+                        "1 taza de maíz cancha tostado",
+                        "Hojas de lechuga para decorar",
+                        "Chifles (opcional)"
+                    ],
+                    "Procedimiento": [
+                        "Cortar el pescado en cubos de 2 cm y colocarlo en un bol de vidrio.",
+                        "Exprimir los limones hasta obtener 1 taza de jugo aproximadamente.",
+                        "Cortar las cebollas en pluma fina y remojar en agua fría por 5 minutos.",
+                        "Mezclar el pescado con sal, pimienta y ají amarillo.",
+                        "Verter el jugo de limón sobre el pescado y mezclar suavemente.",
+                        "Agregar el ají limo, culantro picado y la cebolla escurrida.",
+                        "Revolver y dejar marinar por 10 minutos (no más para que el pescado no se cocine demasiado).",
+                        "Servir en platos individuales acompañado de camote en rodajas, maíz cancha y lechuga.",
+                        "Acompañar con chifles si se desea."
+                    ],
+                    "Imagen": "https://cdn0.recetasgratis.net/es/posts/7/4/1/ceviche_peruano_18147_600_square.jpg",
+                    "color": "#D1F982"
                 }
             };
             inicializarApp();
@@ -476,63 +734,148 @@
         });
     }
     
-    function mostrarDetalleReceta(indice) {
+    async function mostrarDetalleReceta(indice) {
         actualItem = indice;
-        updateData();
+        await updateData(true);
         
-        // Cambiar vistas
+        // Cambiar vistas con animación
         gridView.style.display = "none";
         detailView.style.display = "block";
+        
+        // Añadir clase de animación inicial
+        contenedorGeneral.classList.add('fade-in');
+        contenedorGeneral.classList.add('dynamic-height');
         
         // Scroll al inicio
         window.scrollTo(0, 0);
     }
     
     function volverAGrid() {
-        // Cambiar vistas
-        detailView.style.display = "none";
-        gridView.style.display = "grid";
+        // Animación de salida
+        contenedorGeneral.classList.add('fade-out');
+        
+        setTimeout(() => {
+            // Cambiar vistas
+            detailView.style.display = "none";
+            gridView.style.display = "grid";
+            
+            // Remover clases de animación
+            contenedorGeneral.classList.remove('fade-out');
+            contenedorGeneral.classList.remove('fade-in');
+            contenedorGeneral.classList.remove('dynamic-height');
+        }, 400);
     }
     
-    function back() {
-        actualItem -= 1;
-        if (actualItem < 0) {
-            actualItem = tamañoLista - 1;
-        }
-        updateData();
+    async function back() {
+        if (isAnimating) return;
+        await cambiarReceta('back');
     }
     
-    function next() {
+    async function next() {
+        if (isAnimating) return;
+        await cambiarReceta('next');
+    }
+    
+async function cambiarReceta(direccion) {
+    // Bloquear botones durante la animación
+    isAnimating = true;
+    btnBack.disabled = true;
+    btnNext.disabled = true;
+    btnVolver.disabled = true;
+    buttonContainer.classList.add('hidden');
+    
+    // Añadir clase de animación de salida
+    contenedorGeneral.classList.add('fade-out');
+    contenedorGeneral.classList.add('animating');
+    
+    // Esperar a que termine la animación de salida
+    await new Promise(resolve => setTimeout(resolve, 400));
+    
+    // *** AGREGAR ESTO: Hacer scroll al inicio del contenedor ***
+    contenedorGeneral.scrollTop = 0;
+    
+    // Cambiar índice
+    if (direccion === 'next') {
         actualItem += 1;
         if (actualItem > tamañoLista - 1) {
             actualItem = 0;
         }
-        updateData();
+    } else {
+        actualItem -= 1;
+        if (actualItem < 0) {
+            actualItem = tamañoLista - 1;
+        }
     }
     
-    function updateData() {
+    // Actualizar datos sin animación inicial
+    await updateData(false);
+    
+    // Remover clase de animación de salida
+    contenedorGeneral.classList.remove('fade-out');
+    contenedorGeneral.classList.remove('animating');
+    
+    // Añadir clase de animación de entrada
+    contenedorGeneral.classList.add('fade-in');
+    
+    // Añadir efecto de swipe
+    contenedorGeneral.classList.add('cambiando-receta');
+    
+    // Esperar un momento y luego remover las clases de animación
+    setTimeout(() => {
+        contenedorGeneral.classList.remove('fade-in');
+        contenedorGeneral.classList.remove('cambiando-receta');
+        
+        // *** AGREGAR ESTO: Asegurar scroll al inicio después de la animación ***
+        contenedorGeneral.scrollTop = 0;
+        
+        // Restaurar botones
+        isAnimating = false;
+        btnBack.disabled = false;
+        btnNext.disabled = false;
+            btnVolver.disabled = false;
+            buttonContainer.classList.remove('hidden');
+        }, 800);
+    }
+    
+    async function updateData(esPrimeraVez = false) {
         const recetasNombres = Object.keys(recetasData);
         const recetaNombre = recetasNombres[actualItem];
         const receta = recetasData[recetaNombre];
+        
+        // Ocultar contenido durante la actualización
+        contenidoReceta.style.opacity = '0';
         
         // Actualizar datos de la vista detalle
         nombreReceta.textContent = recetaNombre;
         duracion.innerHTML = `<strong>⏱️ Duración:</strong> ${receta.Info.duracion}`;
         porciones.innerHTML = `<strong>👥 Porciones:</strong> ${receta.Info.porciones}`;
         
+        // Añadir información adicional si existe
+        if (receta.Info.dificultad) {
+            duracion.innerHTML += `<br><strong>⚡ Dificultad:</strong> ${receta.Info.dificultad}`;
+        }
+        if (receta.Info.categoria) {
+            porciones.innerHTML += `<br><strong>📂 Categoría:</strong> ${receta.Info.categoria}`;
+        }
+        if (receta.Info.calorias) {
+            porciones.innerHTML += `<br><strong>🔥 Calorías:</strong> ${receta.Info.calorias}`;
+        }
+        
         // Ingredientes
         ingredientesLista.innerHTML = "";
-        receta.Ingredientes.forEach(ingrediente => {
+        receta.Ingredientes.forEach((ingrediente, index) => {
             const li = document.createElement("li");
             li.textContent = ingrediente;
+            li.style.setProperty("--list-item-order", index);
             ingredientesLista.appendChild(li);
         });
         
         // Procedimiento
         procedimientoLista.innerHTML = "";
-        receta.Procedimiento.forEach(paso => {
+        receta.Procedimiento.forEach((paso, index) => {
             const li = document.createElement("li");
             li.textContent = paso;
+            li.style.setProperty("--list-item-order", index);
             procedimientoLista.appendChild(li);
         });
         
@@ -551,6 +894,66 @@
                 });
             }
         }
+        
+        // Resetear y aplicar animaciones a elementos
+        if (esPrimeraVez) {
+            // Para primera vez, animar todos los elementos
+            setTimeout(() => {
+                animarElementosEntrada();
+                contenidoReceta.style.opacity = '1';
+            }, 100);
+        } else {
+            // Para cambios de receta, esperar un poco antes de mostrar
+            setTimeout(() => {
+                contenidoReceta.style.opacity = '1';
+                animarElementosEntrada();
+            }, 300);
+        }
+        
+        // Ajustar altura dinámica después de que el contenido se cargue
+        setTimeout(ajustarAlturaContenedor, 100);
+    }
+    
+    function animarElementosEntrada() {
+        // Animación para el título
+        nombreReceta.classList.add('animate-in');
+        tituloIngredientes.classList.add('animate-in');
+        tituloProcedimiento.classList.add('animate-in');
+        
+        // Animación para contenedores
+        elementosContenedor.forEach((elemento, index) => {
+            elemento.classList.add('animate-in');
+            elemento.style.setProperty('--element-order', index);
+        });
+        
+        // Remover clases de animación después de que terminen
+        setTimeout(() => {
+            nombreReceta.classList.remove('animate-in');
+            tituloIngredientes.classList.remove('animate-in');
+            tituloProcedimiento.classList.remove('animate-in');
+            elementosContenedor.forEach(elemento => {
+                elemento.classList.remove('animate-in');
+            });
+        }, 1000);
+    }
+    
+    function ajustarAlturaContenedor() {
+        // Calcular la altura total del contenido
+        const contenidoHeight = contenidoReceta.scrollHeight;
+        const padding = 40; // Padding adicional
+        
+        // Establecer altura dinámica
+        contenedorGeneral.style.height = 'auto';
+        contenedorGeneral.style.minHeight = '400px';
+        
+        // Si el contenido es muy alto, limitar la altura y habilitar scroll
+        if (contenidoHeight > 600) {
+            contenedorGeneral.style.maxHeight = '70vh';
+            contenedorGeneral.style.overflowY = 'auto';
+        } else {
+            contenedorGeneral.style.maxHeight = 'none';
+            contenedorGeneral.style.overflowY = 'visible';
+        }
     }
     
     function hexToRgb(hex) {
@@ -563,6 +966,9 @@
             b: parseInt(result[3], 16)
         } : null;
     }
+    
+    // Ajustar altura al redimensionar la ventana
+    window.addEventListener('resize', ajustarAlturaContenedor);
     </script>
 </body>
 </html>
