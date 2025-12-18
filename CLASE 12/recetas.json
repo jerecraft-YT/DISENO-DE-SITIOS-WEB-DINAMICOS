@@ -2,51 +2,74 @@
     "Papa Rellena": {
         "Info": {
             "duracion": "45min",
-            "porciones": "4 porciones"
+            "porciones": "4 porciones",
+            "dificultad": "Media",
+            "categoria": "Aperitivo",
+            "calorias": "350 por porción",
+            "descripcion": "Deliciosas papas rellenas de carne, un clásico de la gastronomía peruana"
         },
         "Ingredientes": [
             "1 kg de papa amarilla",
             "300 g de carne molida",
             "1 cebolla picada",
+            "2 dientes de ajo picados",
             "1 huevo duro picado",
-            "Aceitunas picadas",
-            "Ajo molido",
-            "Comino",
-            "Sal y pimienta",
-            "Aceite para freír"
+            "8 aceitunas negras picadas",
+            "1/4 taza de pasas",
+            "2 cucharadas de ají panca",
+            "1 cucharadita de comino",
+            "Sal y pimienta al gusto",
+            "Aceite vegetal para freír",
+            "Harina para empanizar"
         ],
         "Procedimiento": [
-            "Hervir las papas y hacer un puré espeso.",
-            "Sofreír cebolla, ajo, carne y sazonar.",
-            "Armar la masa de papa y rellenar con carne, huevo y aceituna.",
-            "Formar las papas y freír hasta dorar."
+            "Hervir las papas con cáscara hasta que estén tiernas, pelar y hacer un puré espeso.",
+            "En una sartén, calentar aceite y sofreír la cebolla y el ajo hasta que estén transparentes.",
+            "Agregar la carne molida y cocinar hasta que cambie de color.",
+            "Incorporar el ají panca, comino, sal y pimienta. Cocinar por 5 minutos.",
+            "Añadir las pasas, aceitunas y huevo duro. Mezclar bien y retirar del fuego.",
+            "Tomar porciones de puré, formar una tortilla y colocar el relleno en el centro.",
+            "Cerrar dándole forma ovalada y pasar por harina.",
+            "Freír en aceite caliente hasta que estén doradas por ambos lados.",
+            "Escurrir sobre papel absorbente y servir caliente."
         ],
         "Imagen": "https://www.comeperuano.pe/wp-content/uploads/2019/05/Papa-rellena-con-mariscos-min.jpg",
         "color": "#F7F6D2"
-   
     },
 
     "Ceviche": {
         "Info": {
             "duracion": "25min",
-            "porciones": "3 porciones"
+            "porciones": "3 porciones",
+            "dificultad": "Fácil",
+            "categoria": "Plato Principal",
+            "calorias": "280 por porción",
+            "descripcion": "El plato bandera del Perú, fresco y lleno de sabor"
         },
         "Ingredientes": [
-            "500 g de pescado fresco",
-            "Jugo de limón",
-            "Cebolla roja en pluma",
-            "Ají limo",
-            "Culantro picado",
-            "Sal",
-            "Pimienta",
-            "Maíz cancha",
-            "Camote hervido"
+            "500 g de pescado fresco (corvina o lenguado)",
+            "12 limones verdes",
+            "2 cebollas rojas grandes",
+            "2 ajíes limo picados",
+            "1 manojo de culantro picado",
+            "Sal al gusto",
+            "Pimienta al gusto",
+            "1 cucharadita de ají amarillo molido",
+            "1 camote grande hervido",
+            "1 taza de maíz cancha tostado",
+            "Hojas de lechuga para decorar",
+            "Chifles (opcional)"
         ],
         "Procedimiento": [
-            "Cortar el pescado en cubos.",
-            "Mezclar con sal, limón, ají y cebolla.",
-            "Agregar culantro y reposar brevemente.",
-            "Servir con camote y cancha."
+            "Cortar el pescado en cubos de 2 cm y colocarlo en un bol de vidrio.",
+            "Exprimir los limones hasta obtener 1 taza de jugo aproximadamente.",
+            "Cortar las cebollas en pluma fina y remojar en agua fría por 5 minutos.",
+            "Mezclar el pescado con sal, pimienta y ají amarillo.",
+            "Verter el jugo de limón sobre el pescado y mezclar suavemente.",
+            "Agregar el ají limo, culantro picado y la cebolla escurrida.",
+            "Revolver y dejar marinar por 10 minutos (no más para que el pescado no se cocine demasiado).",
+            "Servir en platos individuales acompañado de camote en rodajas, maíz cancha y lechuga.",
+            "Acompañar con chifles si se desea."
         ],
         "Imagen": "https://cdn0.recetasgratis.net/es/posts/7/4/1/ceviche_peruano_18147_600_square.jpg",
         "color": "#D1F982"
@@ -55,24 +78,38 @@
     "Lomo Saltado": {
         "Info": {
             "duracion": "40min",
-            "porciones": "4 porciones"
+            "porciones": "4 porciones",
+            "dificultad": "Media",
+            "categoria": "Plato Principal",
+            "calorias": "450 por porción",
+            "descripcion": "Fusión peruano-china con carne salteada y papas fritas"
         },
         "Ingredientes": [
-            "500 g de lomo de res",
-            "Cebolla",
-            "Tomate",
-            "Ají amarillo",
-            "Sillao",
-            "Vinagre",
-            "Papas fritas",
-            "Arroz blanco",
-            "Sal y pimienta"
+            "500 g de lomo fino de res",
+            "3 cebollas rojas grandes",
+            "3 tomates perita",
+            "2 ajíes amarillos sin venas",
+            "1/4 taza de salsa de soya",
+            "3 cucharadas de vinagre tinto",
+            "1 cucharada de ají panca",
+            "4 dientes de ajo picados",
+            "1 manojo de culantro picado",
+            "Papas fritas caseras",
+            "Arroz blanco cocido",
+            "Aceite vegetal",
+            "Sal y pimienta al gusto"
         ],
         "Procedimiento": [
-            "Cortar la carne en tiras y saltear a fuego fuerte.",
-            "Agregar cebolla, tomate y ají.",
-            "Incorporar sillao y vinagre.",
-            "Mezclar con papas fritas y servir con arroz."
+            "Cortar la carne en tiras delgadas y sazonar con sal y pimienta.",
+            "Cortar las cebollas en gajos gruesos y los tomates en cuartos.",
+            "Cortar los ajíes amarillos en tiras finas.",
+            "Calentar un wok o sartén grande a fuego alto con aceite.",
+            "Sellar la carne por 2-3 minutos hasta que esté dorada pero jugosa.",
+            "Agregar las cebollas, ajo y ají amarillo. Saltear por 2 minutos.",
+            "Incorporar los tomates, salsa de soya, vinagre y ají panca.",
+            "Cocinar a fuego alto por 3-4 minutos más.",
+            "Añadir el culantro picado al final.",
+            "Servir inmediatamente con papas fritas y arroz blanco."
         ],
         "Imagen": "https://es.cravingsjournal.com/wp-content/uploads/2021/08/lomo-saltado-2-500x500.jpg",
         "color": "#59702B"
@@ -81,25 +118,40 @@
     "Aji de Gallina": {
         "Info": {
             "duracion": "50min",
-            "porciones": "4 porciones"
+            "porciones": "4 porciones",
+            "dificultad": "Media",
+            "categoria": "Plato Principal",
+            "calorias": "380 por porción",
+            "descripcion": "Crema suave de pollo con ají amarillo y nueces"
         },
         "Ingredientes": [
-            "Pechuga de pollo deshilachada",
-            "Pan remojado en leche",
-            "Ají amarillo molido",
-            "Queso parmesano",
-            "Nuez moscada",
-            "Cebolla",
-            "Ajo",
-            "Papas sancochadas",
-            "Huevos duros",
-            "Arroz blanco"
+            "500 g de pechuga de pollo",
+            "4 ajíes amarillos sin venas",
+            "1 cebolla roja picada",
+            "4 dientes de ajo picados",
+            "1/2 taza de nueces molidas",
+            "4 rebanadas de pan de molde",
+            "1 taza de leche evaporada",
+            "1/2 taza de queso parmesano rallado",
+            "1 cucharadita de palillo (cúrcuma)",
+            "2 huevos duros",
+            "Aceitunas negras",
+            "Papas amarillas hervidas",
+            "Arroz blanco",
+            "Aceite vegetal",
+            "Sal y pimienta al gusto"
         ],
         "Procedimiento": [
-            "Sofreír la cebolla y el ajo.",
-            "Agregar el ají amarillo y mezclar.",
-            "Incorporar pollo deshilachado y el pan remojado.",
-            "Cocinar hasta espesar y servir con papa y arroz."
+            "Cocinar el pollo en agua con sal hasta que esté tierno (20 minutos).",
+            "Deshilachar el pollo y reservar el caldo.",
+            "Remojar el pan en leche hasta que se ablande.",
+            "Licuar los ajíes amarillos con las nueces y un poco de caldo.",
+            "En una olla, sofreír la cebolla y el ajo hasta que estén dorados.",
+            "Agregar la mezcla licuada y cocinar por 5 minutos.",
+            "Incorporar el pan remojado, mezclar bien y agregar más caldo si es necesario.",
+            "Añadir el pollo deshilachado y cocinar por 10 minutos a fuego bajo.",
+            "Incorporar la leche evaporada y el queso parmesano. Rectificar sal.",
+            "Servir sobre papas amarillas, acompañado de arroz blanco, huevo duro y aceitunas."
         ],
         "Imagen": "https://cdn0.recetasgratis.net/es/posts/4/3/0/aji_de_gallina_peruano_78034_600_square.jpg",
         "color": "#4A4EB0"
@@ -108,27 +160,226 @@
     "Arroz con Pollo": {
         "Info": {
             "duracion": "60min",
-            "porciones": "5 porciones"
+            "porciones": "5 porciones",
+            "dificultad": "Fácil",
+            "categoria": "Plato Principal",
+            "calorias": "420 por porción",
+            "descripcion": "Arroz verde perfumado con culantro y pollo jugoso"
         },
         "Ingredientes": [
-            "Piezas de pollo",
-            "Culantro licuado",
-            "Cebolla",
-            "Ajo",
-            "Pimiento",
-            "Arvejas",
-            "Zanahoria",
-            "Arroz",
-            "Cerveza o agua",
-            "Sal y pimienta"
+            "1 kg de pollo en presas",
+            "2 tazas de arroz largo",
+            "2 manojos de culantro",
+            "1 cebolla roja picada",
+            "4 dientes de ajo picados",
+            "1 pimiento rojo picado",
+            "1 taza de arvejas frescas",
+            "1 zanahoria picada en cubos",
+            "1/2 taza de choclo desgranado",
+            "1/2 taza de cerveza negra (opcional)",
+            "4 tazas de caldo de pollo",
+            "2 cucharadas de ají amarillo molido",
+            "Comino al gusto",
+            "Aceite vegetal",
+            "Sal y pimienta al gusto"
         ],
         "Procedimiento": [
-            "Sazonar y dorar el pollo.",
-            "Sofreír cebolla, ajo y culantro licuado.",
-            "Agregar pollo, verduras y arroz.",
-            "Cocinar hasta que el arroz esté listo."
+            "Sazonar el pollo con sal, pimienta y comino.",
+            "En una olla grande, dorar el pollo por ambos lados. Retirar y reservar.",
+            "Licuar el culantro con un poco de agua hasta obtener un puré verde.",
+            "En la misma olla, sofreír la cebolla, ajo y pimiento hasta que estén suaves.",
+            "Agregar el arroz y tostar por 2 minutos.",
+            "Incorporar el puré de culantro, ají amarillo y mezclar bien.",
+            "Devolver el pollo a la olla y agregar las verduras.",
+            "Verter la cerveza (si se usa) y el caldo de pollo.",
+            "Cocinar a fuego medio-bajo por 20-25 minutos hasta que el arroz esté cocido.",
+            "Dejar reposar tapado por 5 minutos antes de servir.",
+            "Servir con salsa criolla por encima."
         ],
         "Imagen": "https://www.eatperu.com/wp-content/uploads/2020/03/arroz-con-pollo-peruvian-dish-500x500.jpg",
         "color": "#6E4A64"
+    },
+
+    "Causa Limeña": {
+        "Info": {
+            "duracion": "35min",
+            "porciones": "6 porciones",
+            "dificultad": "Fácil",
+            "categoria": "Entrada",
+            "calorias": "320 por porción",
+            "descripcion": "Pastel frío de papa amarilla con relleno de pollo o atún"
+        },
+        "Ingredientes": [
+            "1 kg de papa amarilla",
+            "300 g de pechuga de pollo deshilachada (o atún enlatado)",
+            "3 limones verdes",
+            "3 ajíes amarillos sin venas",
+            "1/2 taza de aceite vegetal",
+            "1 cebolla roja picada finamente",
+            "1 palta madura",
+            "2 huevos duros en rodajas",
+            "Aceitunas negras",
+            "Lechuga para decorar",
+            "Sal y pimienta al gusto",
+            "Aji amarillo molido (opcional)"
+        ],
+        "Procedimiento": [
+            "Hervir las papas hasta que estén tiernas, pelar y hacer puré.",
+            "Licuar los ajíes amarillos con el aceite hasta obtener una pasta.",
+            "Mezclar el puré de papa con el jugo de limón, la pasta de ají, sal y pimienta.",
+            "Para el relleno: Mezclar el pollo deshilachado con mayonesa, cebolla picada y ají amarillo molido.",
+            "En un molde, colocar una capa de masa de papa, luego el relleno de pollo.",
+            "Agregar rodajas de palta y otra capa de masa de papa.",
+            "Decorar con huevo duro en rodajas, aceitunas y lechuga.",
+            "Refrigerar por al menos 1 hora antes de servir frío."
+        ],
+        "Imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbrqr3CG3ZiL65c24eb104oddzN3ZKNWh6mA&s",
+        "color": "#FFD166"
+    },
+
+    "Anticuchos": {
+        "Info": {
+            "duracion": "40min + marinado",
+            "porciones": "4 porciones",
+            "dificultad": "Media",
+            "categoria": "Aperitivo",
+            "calorias": "290 por porción",
+            "descripcion": "Brochetas de corazón de res marinadas en ají panca"
+        },
+        "Ingredientes": [
+            "1 kg de corazón de res limpio",
+            "6 dientes de ajo molidos",
+            "3 cucharadas de ají panca molido",
+            "1/2 taza de vinagre tinto",
+            "1 cucharada de comino molido",
+            "1 cucharadita de orégano",
+            "Sal y pimienta al gusto",
+            "Palitos de caña o brochetas de metal",
+            "2 papas amarillas hervidas",
+            "1 choclo hervido",
+            "Aceite vegetal"
+        ],
+        "Procedimiento": [
+            "Cortar el corazón en cubos de 3 cm aproximadamente.",
+            "Preparar la marinada con ajo, ají panca, vinagre, comino, orégano, sal y pimienta.",
+            "Mezclar el corazón con la marinada y refrigerar por al menos 4 horas (idealmente toda la noche).",
+            "Ensartar los cubos de corazón en los palitos o brochetas.",
+            "Calentar la parrilla o sartén a fuego alto.",
+            "Asar los anticuchos por 8-10 minutos, girando ocasionalmente, hasta que estén dorados.",
+            "Servir caliente con papas hervidas y choclo.",
+            "Acompañar con salsa criolla y ají."
+        ],
+        "Imagen": "https://rumbameats.com/wp-content/uploads/2019/07/Anticuchos-1.jpg",
+        "color": "#8B0000"
+    },
+
+    "Papa a la Huancaína": {
+        "Info": {
+            "duracion": "25min",
+            "porciones": "6 porciones",
+            "dificultad": "Fácil",
+            "categoria": "Entrada",
+            "calorias": "280 por porción",
+            "descripcion": "Papas con salsa cremosa de queso y ají amarillo"
+        },
+        "Ingredientes": [
+            "8 papas amarillas medianas",
+            "6 galletas de soda",
+            "200 g de queso fresco",
+            "4 ajíes amarillos sin venas",
+            "1/2 taza de aceite vegetal",
+            "1 taza de leche evaporada",
+            "2 dientes de ajo",
+            "Sal al gusto",
+            "Hojas de lechuga",
+            "4 huevos duros",
+            "Aceitunas negras",
+            "Orégano para decorar"
+        ],
+        "Procedimiento": [
+            "Hervir las papas con cáscara hasta que estén tiernas. Pelar y cortar en rodajas.",
+            "Licuar los ajíes amarillos, queso fresco, galletas, ajo y sal.",
+            "Mientras licúa, agregar el aceite en hilo fino hasta emulsionar.",
+            "Incorporar la leche poco a poco hasta obtener una salsa cremosa.",
+            "Rectificar la sal y colocar en refrigeración por 15 minutos.",
+            "En un plato, colocar lechuga como base y sobre ella las rodajas de papa.",
+            "Bañar con la salsa huancaína fría.",
+            "Decorar con huevo duro en rodajas, aceitunas y espolvorear orégano.",
+            "Servir inmediatamente."
+        ],
+        "Imagen": "https://cdn0.recetasgratis.net/es/posts/5/0/1/papas_a_la_huancaina_32105_orig.jpg",
+        "color": "#FFB347"
+    },
+
+    "Tacu Tacu": {
+        "Info": {
+            "duracion": "30min",
+            "porciones": "4 porciones",
+            "dificultad": "Fácil",
+            "categoria": "Plato Principal",
+            "calorias": "380 por porción",
+            "descripcion": "Tortilla de arroz y frijoles con bistec y salsa criolla"
+        },
+        "Ingredientes": [
+            "2 tazas de arroz cocido",
+            "2 tazas de frijoles canarios cocidos",
+            "1 cebolla roja picada",
+            "2 dientes de ajo picados",
+            "1 cucharadita de ají amarillo molido",
+            "4 bistecs de lomo",
+            "Salsa criolla",
+            "Plátanos fritos",
+            "Aceite vegetal",
+            "Sal y pimienta al gusto",
+            "Comino al gusto"
+        ],
+        "Procedimiento": [
+            "En un bol, mezclar el arroz cocido con los frijoles.",
+            "En una sartén, sofreír la mitad de la cebolla y el ajo hasta que estén dorados.",
+            "Agregar el ají amarillo y cocinar por 2 minutos.",
+            "Incorporar esta mezcla a los frijoles y arroz. Sazonar con sal, pimienta y comino.",
+            "Formar tortillas con la mezcla y dorar en sartén con aceite por ambos lados.",
+            "En otra sartén, sellar los bistecs al gusto.",
+            "Servir el tacu tacu con el bistec encima, salsa criolla y plátano frito.",
+            "Rociar con salsa de cebolla si se desea."
+        ],
+        "Imagen": "https://comedera.com/wp-content/uploads/sites/9/2022/03/Tacu-tacu-shutterstock_1604013508.jpg",
+        "color": "#8B7355"
+    },
+
+    "Suspiro Limeño": {
+        "Info": {
+            "duracion": "45min",
+            "porciones": "6 porciones",
+            "dificultad": "Media",
+            "categoria": "Postre",
+            "calorias": "420 por porción",
+            "descripcion": "Dulce tradicional limeño con manjarblanco y merengue"
+        },
+        "Ingredientes": [
+            "1 lata de leche evaporada",
+            "1 lata de leche condensada",
+            "6 yemas de huevo",
+            "1 cucharadita de esencia de vainilla",
+            "1/2 taza de vino oporto o pisco",
+            "4 claras de huevo",
+            "1 taza de azúcar",
+            "1/4 taza de agua",
+            "Canela en polvo para decorar"
+        ],
+        "Procedimiento": [
+            "En una olla, mezclar la leche evaporada y condensada.",
+            "Cocinar a fuego medio revolviendo constantemente por 15 minutos.",
+            "Batir las yemas y agregarlas a la mezcla de leche, batiendo rápido.",
+            "Cocinar por 5 minutos más hasta que espese. Agregar vainilla.",
+            "Verter en copas individuales y dejar enfriar.",
+            "Preparar el merengue: hervir el azúcar con agua hasta obtener punto de bola blanda.",
+            "Batir las claras a punto de nieve y agregar el almíbar en hilo mientras se bate.",
+            "Agregar el vino oporto o pisco y batir hasta que el merengue esté brillante.",
+            "Colocar el merengue sobre el manjarblanco frío.",
+            "Espolvorear con canela y servir frío."
+        ],
+        "Imagen": "https://www.recetasnestle.com.pe/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/8e3e757d8f89dac1dfe2e7e547ee35eb.png?itok=1EuZQBaZ",
+        "color": "#F5DEB3"
     }
 }
