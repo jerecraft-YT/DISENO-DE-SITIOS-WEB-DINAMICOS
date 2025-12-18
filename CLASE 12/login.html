@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Login</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #ff9a3c, #ff5f6d);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            background: #fff8f0;
+            padding: 30px;
+            border-radius: 15px;
+            width: 320px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff6f00;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            background: #ff6f00;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e65c00;
+        }
+
+        .mensaje {
+            margin-top: 12px;
+            font-size: 14px;
+            display: none;
+        }
+
+        .error {
+            color: #d32f2f;
+        }
+
+        .success {
+            color: #2e7d32;
+        }
+
+        .food-icons {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <div class="food-icons">🍕 🍔 🌮 🍩</div>
+    <h1>Food Login</h1>
+
+    <form id="loginForm">
+        <input type="text" id="usuario" placeholder="👤 Usuario">
+        <input type="password" id="password" placeholder="🔒 Contraseña">
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+
+    <div id="mensajeError" class="mensaje error">
+        ❌ Usuario o contraseña incorrectos
+    </div>
+
+    <div id="mensajeExito" class="mensaje success">
+        ✅ ¡Bienvenido! Inicio de sesión exitoso
+    </div>
+</div>
+
+<script>
+    // Credenciales reales (ejemplo)
+    const USUARIO_REAL = "admin";
+    const PASSWORD_REAL = "123456";
+
+    const form = document.getElementById("loginForm");
+    const usuario = document.getElementById("usuario");
+    const password = document.getElementById("password");
+
+    const mensajeError = document.getElementById("mensajeError");
+    const mensajeExito = document.getElementById("mensajeExito");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        mensajeError.style.display = "none";
+        mensajeExito.style.display = "none";
+
+        if (
+            usuario.value === USUARIO_REAL &&
+            password.value === PASSWORD_REAL
+        ) {
+            mensajeExito.style.display = "block";
+            form.reset();
+
+            // Ejemplo de redirección
+            window.location.href = "index.html";
+        } else {
+            mensajeError.style.display = "block";
+        }
+    });
+</script>
+
+</body>
+</html>
