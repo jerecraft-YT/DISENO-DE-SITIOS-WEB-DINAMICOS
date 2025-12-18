@@ -34,7 +34,7 @@
             "Escurrir sobre papel absorbente y servir caliente."
         ],
         "Imagen": "https://www.comeperuano.pe/wp-content/uploads/2019/05/Papa-rellena-con-mariscos-min.jpg",
-        "color": "#F7F6D2"
+        "color": "#F0E6D2"
     },
 
     "Ceviche": {
@@ -72,7 +72,7 @@
             "Acompañar con chifles si se desea."
         ],
         "Imagen": "https://cdn0.recetasgratis.net/es/posts/7/4/1/ceviche_peruano_18147_600_square.jpg",
-        "color": "#D1F982"
+        "color": "#E6F7D4"
     },
 
     "Lomo Saltado": {
@@ -112,7 +112,7 @@
             "Servir inmediatamente con papas fritas y arroz blanco."
         ],
         "Imagen": "https://es.cravingsjournal.com/wp-content/uploads/2021/08/lomo-saltado-2-500x500.jpg",
-        "color": "#59702B"
+        "color": "#E8F0D6"
     },
 
     "Aji de Gallina": {
@@ -154,7 +154,7 @@
             "Servir sobre papas amarillas, acompañado de arroz blanco, huevo duro y aceitunas."
         ],
         "Imagen": "https://cdn0.recetasgratis.net/es/posts/4/3/0/aji_de_gallina_peruano_78034_600_square.jpg",
-        "color": "#4A4EB0"
+        "color": "#E8E6FA"
     },
 
     "Arroz con Pollo": {
@@ -197,7 +197,7 @@
             "Servir con salsa criolla por encima."
         ],
         "Imagen": "https://www.eatperu.com/wp-content/uploads/2020/03/arroz-con-pollo-peruvian-dish-500x500.jpg",
-        "color": "#6E4A64"
+        "color": "#F0E6EE"
     },
 
     "Causa Limeña": {
@@ -234,7 +234,7 @@
             "Refrigerar por al menos 1 hora antes de servir frío."
         ],
         "Imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbrqr3CG3ZiL65c24eb104oddzN3ZKNWh6mA&s",
-        "color": "#FFD166"
+        "color": "#FFF6D9"
     },
 
     "Anticuchos": {
@@ -270,7 +270,7 @@
             "Acompañar con salsa criolla y ají."
         ],
         "Imagen": "https://rumbameats.com/wp-content/uploads/2019/07/Anticuchos-1.jpg",
-        "color": "#8B0000"
+        "color": "#F8E0E0"
     },
 
     "Papa a la Huancaína": {
@@ -308,7 +308,7 @@
             "Servir inmediatamente."
         ],
         "Imagen": "https://cdn0.recetasgratis.net/es/posts/5/0/1/papas_a_la_huancaina_32105_orig.jpg",
-        "color": "#FFB347"
+        "color": "#FFEFD5"
     },
 
     "Tacu Tacu": {
@@ -344,7 +344,7 @@
             "Rociar con salsa de cebolla si se desea."
         ],
         "Imagen": "https://comedera.com/wp-content/uploads/sites/9/2022/03/Tacu-tacu-shutterstock_1604013508.jpg",
-        "color": "#8B7355"
+        "color": "#F5F0E6"
     },
 
     "Suspiro Limeño": {
@@ -380,6 +380,6 @@
             "Espolvorear con canela y servir frío."
         ],
         "Imagen": "https://www.recetasnestle.com.pe/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/8e3e757d8f89dac1dfe2e7e547ee35eb.png?itok=1EuZQBaZ",
-        "color": "#F5DEB3"
+        "color": "#FFF8E1"
     }
 }
