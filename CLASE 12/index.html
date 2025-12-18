@@ -128,7 +128,7 @@
         }
         
         .seccion {
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgb(218, 218, 218);
             border-radius: 10px;
             padding: 15px;
             margin-bottom: 20px;
@@ -151,7 +151,7 @@
         }
         
         .info-item {
-            background-color: #f0f8ff;
+            background-color: #b1b1b1;
             padding: 10px 15px;
             border-radius: 8px;
             font-size: 14px;
@@ -470,13 +470,13 @@
             // Agregar información adicional si existe
             let infoExtra = '';
             if (receta.Info.dificultad) {
-                infoExtra += `<div class="info-item"><strong>⚡</strong> ${receta.Info.dificultad}</div>`;
+                infoExtra += `<div class="info-item"><strong>⚡ Dificultad: </strong> ${receta.Info.dificultad}</div>`;
             }
             if (receta.Info.categoria) {
                 infoExtra += `<div class="info-item"><strong>📂</strong> ${receta.Info.categoria}</div>`;
             }
             if (receta.Info.calorias) {
-                infoExtra += `<div class="info-item"><strong>🔥</strong> ${receta.Info.calorias}</div>`;
+                infoExtra += `<div class="info-item"><strong>🔥 Calorias: </strong> ${receta.Info.calorias}</div>`;
             }
             
             // Agregar información adicional al contenedor
