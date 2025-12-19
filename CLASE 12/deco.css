@@ -1,179 +1,259 @@
-body{
-    background-image: url("background.jpg");
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative; 
-    padding: 20px;
-
-}
-
-@font-face {
-        font-family: 'Christmas_Buttermilk';
-        src: url('Christmas_Buttermilk.otf') format('opentype');
-    }
-
-h1{
-    font-family: 'Christmas_Buttermilk', normal;
-    text-decoration: underline;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 15px;
-}
-
-h1{
-    text-align: center;
-}
-
-.recetitas{
-    align-items: center;
-    width: 1000px;
-    margin-top: 50px;
-}
-.recetaCentrar{
-    color: rgb(0, 0, 0);
-    font-family: 'Christmas_Buttermilk', normal;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-
-.ContenedorRecetas{
-        border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 25px;
-        height: 660px;
-        box-shadow: 0 3px 8px rgba(0,0,0,0.5);
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        min-height: 660px; /* Usa min-height en lugar de height fijo */
-}
-
-.ContenedorElemento{
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    box-shadow: 0 5px 8px rgba(0,0,0,0.5);
-    background: rgba(255, 255, 255, 0.25);
-    border-radius: 10px;
-    padding: 10px;
-    text-align: left;
-}
-
-button{
-    color: white;
-    height: 40px;
-    background-color: #0078ff;
-    width: 350px;
-    border: 1px solid rgb(153, 153, 153);
-    border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-    transition: background-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-button:hover{
-    background-color: #005fcc;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
-}
-
-
-.button-container{
-    display: flex;
-    justify-content: center; /* Centra los botones */
-    gap: 20px;               /* Espacio entre botones */
-    margin-top: 20px;
-}
-
-
-
-.backgroundBlur{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw; /* 100% del ancho de la ventana */
-    height: 100vh; /* 100% del alto de la ventana */
-    display: grid;
-    background-image: url("background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    filter: blur(5px); /* Aquí aplicas el desenfoque */
-    z-index: -1; /* Esto envía el fondo detrás del contenido */
-}
-
-img {
-    display: block;            /* Permite centrar */
-    margin: 0 auto;            /* Centrado horizontal */
-    width: 300px;              /* Ancho fijo */
-    height: 200px;             /* Alto fijo */
-    object-fit: cover;         /* Recorta la imagen sin deformarla */
-    border-radius: 10px;       /* Opcional, esquinas redondeadas */
-}
-
-/* Mantén todo tu CSS actual y añade/ajusta esto: */
-
-/* Animación combinada - VERSIÓN MEJORADA */
-.page-transition {
-    position: relative;
-    overflow: hidden;
-}
-
-.page-transition::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, 
-        rgba(255,255,255,0) 0%,
-        rgba(255,255,255,0.8) 50%,
-        rgba(255,255,255,0) 100%);
-    transform: translateX(-100%);
-    z-index: 100;
-    pointer-events: none;
-}
-
-.page-transition.animate::before {
-    animation: swipe 0.6s ease-in-out forwards;
-}
-
-@keyframes swipe {
-    0% {
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(100%);
-    }
-}
-
-.content-hidden {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.content-visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s ease 0.2s, transform 0.5s ease 0.2s; /* Delay para que aparezca después del swipe */
-}
-
-/* Mejorar la transición del fondo */
-.ContenedorRecetas {
-    transition: background-image 0.5s ease;
-}
-
-/* Estilo para botones deshabilitados temporalmente */
-button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
+        /* Estilos generales */
+        body {
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Fondo desenfocado */
+        .fondo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("background.jpg");
+            background-size: cover;
+            filter: blur(5px);
+            z-index: -1;
+        }
+        
+        /* Título principal */
+        .titulo {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+            font-size: 40px;
+            margin: 20px 0;
+        }
+        
+        /* Contenedor principal */
+        .contenedor-principal {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Vista de cuadrícula */
+        .cuadricula {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        /* Tarjetas de recetas */
+        .tarjeta {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .tarjeta:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        
+        .tarjeta img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .tarjeta-contenido {
+            padding: 15px;
+        }
+        
+        .tarjeta-titulo {
+            font-size: 22px;
+            margin: 0 0 10px 0;
+            text-align: center;
+            color: #333;
+        }
+        
+        .tarjeta-info {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .tarjeta-descripcion {
+            color: #777;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        /* Vista de detalle */
+        .detalle {
+            display: none;
+        }
+        
+        .contenedor-detalle {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        
+        .detalle-titulo {
+            text-align: center;
+            font-size: 32px;
+            margin: 0 0 20px 0;
+            color: #222;
+        }
+        
+        /* Imagen en detalle */
+        .detalle-imagen {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .seccion {
+            background-color: rgb(218, 218, 218);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .subtitulo {
+            font-size: 24px;
+            color: #444;
+            margin: 0 0 15px 0;
+            text-align: center;
+        }
+        
+        .info-receta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        
+        .info-item {
+            background-color: #b1b1b1;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .lista-ingredientes {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .lista-ingredientes li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            color: #333;
+        }
+        
+        .lista-procedimiento {
+            padding-left: 20px;
+        }
+        
+        .lista-procedimiento li {
+            margin-bottom: 10px;
+            color: #333;
+            line-height: 1.5;
+        }
+        
+        /* Botones */
+        .botones {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .boton {
+            background-color: #0078ff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .boton:hover {
+            background-color: #005fcc;
+        }
+        
+        .boton-volver {
+            background-color: #28a745;
+        }
+        
+        .boton-volver:hover {
+            background-color: #218838;
+        }
+        
+        /* Animaciones simples */
+        .mostrar {
+            animation: aparecer 0.5s;
+        }
+        
+        @keyframes aparecer {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .cuadricula {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 15px;
+                padding: 10px;
+            }
+            
+            .botones {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .boton {
+                width: 90%;
+                max-width: 300px;
+            }
+            
+            .detalle-imagen {
+                max-height: 250px;
+            }
+            
+            .detalle-titulo {
+                font-size: 28px;
+            }
+            
+            .subtitulo {
+                font-size: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .cuadricula {
+                grid-template-columns: 1fr;
+            }
+            
+            .detalle-imagen {
+                max-height: 200px;
+            }
+            
+            .detalle-titulo {
+                font-size: 24px;
+            }
+        }

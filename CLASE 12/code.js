@@ -1,194 +1,194 @@
-let recetasData = null;
-let actualItem = 0;
-let tamañoLista = 0;
-let receta = "";
-const nombreReceta = document.getElementById("recetaTitulo")
-const nombreIngredientes = document.getElementById("Ingredientes")
-const nombreProcedimiento = document.getElementById("Procedimiento")
-const datoProcedimiento = document.getElementById("procedimiento")
-const duracion = document.getElementById("duracion")
-const porciones = document.getElementById("porciones")
-const datoIngrediente = document.getElementById("ingredientes")
-const contenedorGeneral = document.getElementById("ContenedorRecetas")
-const elementosContenedor = document.querySelectorAll(".ContenedorElemento")
+// Variables globales
+let recetas = null;
+let recetaActual = 0;
+let totalRecetas = 0;
 
-// Agregar clase para animaciones
-contenedorGeneral.classList.add('page-transition');
+// Elementos del DOM
+const vistaCuadricula = document.getElementById('vista-cuadricula');
+const vistaDetalle = document.getElementById('vista-detalle');
+const tituloReceta = document.getElementById('titulo-receta');
+const imagenReceta = document.getElementById('imagen-receta');
+const infoDuracion = document.getElementById('info-duracion');
+const infoPorciones = document.getElementById('info-porciones');
+const listaIngredientes = document.getElementById('lista-ingredientes');
+const listaProcedimiento = document.getElementById('lista-procedimiento');
+const contenedorDetalle = document.getElementById('contenedor-detalle');
 
-cargarRecetas()
+// Cargar las recetas al iniciar
+cargarRecetas();
 
 async function cargarRecetas() {
-    try {
-        const response = await fetch('./recetas.json');
-        recetasData = await response.json();
-        inicializarApp();
-    } catch (error) {
-        console.error('Error cargando JSON:', error);
-    }
-}
-
-function inicializarApp(){
-    tamañoLista = Object.keys(recetasData).length
-    updateData()
-}
-
-async function back(){
-    await cambiarRecetaConAnimacion('back');
-}
-
-async function next(){
-    await cambiarRecetaConAnimacion('next');
-}
-
-async function cambiarRecetaConAnimacion(direccion) {
-    // Deshabilitar botones durante la animación
-    const botones = document.querySelectorAll('button');
-    botones.forEach(boton => {
-        boton.style.pointerEvents = 'none';
-        boton.style.opacity = '0.7';
-    });
-    
-    // Ocultar contenido actual
-    ocultarContenido();
-    
-    // Esperar un momento para que se oculte
-    await new Promise(resolve => setTimeout(resolve, 150));
-    
-    // Cambiar contenido
-    if (direccion === 'next') {
-        actualItem += 1;
-    } else {
-        actualItem -= 1;
-    }
-    detectLimit();
-    
-    // Esperar a que termine la animación de swipe
-    await new Promise(resolve => setTimeout(resolve, 450));
-    
-    // Actualizar datos
-    updateData();
-    
-    // Mostrar nuevo contenido
-    mostrarContenido();
-    
-    // Habilitar botones
-    botones.forEach(boton => {
-        boton.style.pointerEvents = 'auto';
-        boton.style.opacity = '1';
-    });
-}
-
-function ocultarContenido() {
-    // Aplicar animación de salida
-    contenedorGeneral.classList.add('animate');
-    
-    // Ocultar todos los elementos hijos directos e indirectos
-    // Usamos selectores más simples
-    const elementosParaOcultar = [
-        '#recetaTitulo',
-        '.ContenedorElemento',
-        '#duracion',
-        '#porciones',
-        '#ingredientes',
-        '#procedimiento',
-        "#Ingredientes",
-        "#Procedimiento"
-    ];
-    
-    elementosParaOcultar.forEach(selector => {
-        const elementos = contenedorGeneral.querySelectorAll(selector);
-        elementos.forEach(el => {
-            el.classList.add('content-hidden');
-            el.classList.remove('content-visible');
-        });
-    });
-}
-
-function mostrarContenido() {
-    // Remover animación de swipe
-    setTimeout(() => {
-        contenedorGeneral.classList.remove('animate');
-    }, 100);
-    
-    // Mostrar contenido con animación
-    const elementosParaMostrar = [
-        '#recetaTitulo',
-        '.ContenedorElemento',
-        '#duracion',
-        '#porciones',
-        '#ingredientes',
-        '#procedimiento',
-        "#Ingredientes",
-        "#Procedimiento"
-    ];
-    
-    elementosParaMostrar.forEach(selector => {
-        const elementos = contenedorGeneral.querySelectorAll(selector);
-        elementos.forEach(el => {
-            el.classList.remove('content-hidden');
-            el.classList.add('content-visible');
-        });
-    });
-    
-    // Remover clase de visible después de un tiempo
-    setTimeout(() => {
-        elementosParaMostrar.forEach(selector => {
-            const elementos = contenedorGeneral.querySelectorAll(selector);
-            elementos.forEach(el => {
-                el.classList.remove('content-visible');
-            });
-        });
-    }, 800);
-}
-
-function updateData(){
-    receta = Object.keys(recetasData)[actualItem]
-    nombreReceta.textContent = receta
-    duracion.textContent = "Duracion: " + recetasData[receta].Info.duracion
-    porciones.textContent = "Porciones: " + recetasData[receta].Info.porciones
-    
-    const ingredientes = recetasData[receta].Ingredientes;
-    const textoIngredientes = ingredientes.map(item => `• ${item}`).join('\n');
-    datoIngrediente.textContent = textoIngredientes
-    datoIngrediente.style.whiteSpace = 'pre-line';
-
-    const procedimiento = recetasData[receta].Procedimiento;
-    const textProcedimiento = procedimiento.map(item => `• ${item}`).join('\n');
-    datoProcedimiento.textContent = textProcedimiento
-    datoProcedimiento.style.whiteSpace = 'pre-line';
-
-    contenedorGeneral.style.backgroundImage = `url('${recetasData[receta].Imagen}')`
-
-    // Color de los contenedores
-    const colorHex = recetasData[receta].color;
-    
-    if (colorHex) {
-        const rgbColor = hexToRgb(colorHex);
-        
-        if (rgbColor) {
-            elementosContenedor.forEach(elemento => {
-                elemento.style.backgroundColor = `rgba(${rgbColor.r}, ${rgbColor.g}, ${rgbColor.b}, 0.5)`;
-            });
+try {
+    const respuesta = await fetch('recetas.json');
+    recetas = await respuesta.json();
+    iniciarApp();
+} catch (error) {
+    console.log('Error cargando las recetas:', error);
+    // Usar datos de ejemplo si hay error
+    recetas = {
+        "Ceviche Peruano": {
+            "Info": {
+                "duracion": "30min",
+                "porciones": "4 personas",
+                "dificultad": "Fácil",
+                "categoria": "Plato Principal",
+                "calorias": "280 por porción",
+                "descripcion": "El plato bandera del Perú"
+            },
+            "Ingredientes": ["Pescado fresco", "Limones", "Cebolla", "Ají", "Cilantro"],
+            "Procedimiento": ["Cortar el pescado", "Mezclar con limón", "Agregar ingredientes"],
+            "Imagen": "https://cdn0.recetasgratis.net/es/posts/7/4/1/ceviche_peruano_18147_600_square.jpg",
+            "color": "#E6F7D4"
         }
-    }
+    };
+    iniciarApp();
+}
 }
 
-function detectLimit(){
-    if (actualItem < 0){
-        actualItem = tamañoLista-1
-    }
-    if (actualItem > tamañoLista-1){
-        actualItem = 0
-    }
+function iniciarApp() {
+totalRecetas = Object.keys(recetas).length;
+mostrarCuadricula();
 }
 
-function hexToRgb(hex) {
-    const hexValue = hex.replace('#', '');
-    const result = /^([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hexValue);
+function mostrarCuadricula() {
+vistaCuadricula.innerHTML = '';
 
-    return result ? {
-        r: parseInt(result[1], 16),
-        g: parseInt(result[2], 16),
-        b: parseInt(result[3], 16)
-    } : null;
+const nombresRecetas = Object.keys(recetas);
+
+nombresRecetas.forEach((nombre, indice) => {
+    const receta = recetas[nombre];
+    
+    // Crear tarjeta
+    const tarjeta = document.createElement('div');
+    tarjeta.className = 'tarjeta mostrar';
+    
+    // Imagen
+    const imagen = document.createElement('img');
+    imagen.src = receta.Imagen;
+    imagen.alt = nombre;
+    
+    // Contenido de la tarjeta
+    const contenido = document.createElement('div');
+    contenido.className = 'tarjeta-contenido';
+    
+    // Título
+    const titulo = document.createElement('h3');
+    titulo.className = 'tarjeta-titulo';
+    titulo.textContent = nombre;
+    
+    // Información
+    const info = document.createElement('div');
+    info.className = 'tarjeta-info';
+    info.innerHTML = `⏱️ ${receta.Info.duracion} &nbsp; 👥 ${receta.Info.porciones}`;
+    
+    // Descripción
+    const descripcion = document.createElement('p');
+    descripcion.className = 'tarjeta-descripcion';
+    descripcion.textContent = receta.Info.descripcion || 'Receta peruana';
+    
+    // Evento de clic
+    tarjeta.onclick = function() {
+        mostrarDetalle(indice);
+    };
+    
+    // Unir todo
+    contenido.appendChild(titulo);
+    contenido.appendChild(info);
+    contenido.appendChild(descripcion);
+    tarjeta.appendChild(imagen);
+    tarjeta.appendChild(contenido);
+    vistaCuadricula.appendChild(tarjeta);
+});
+}
+
+function mostrarDetalle(indice) {
+recetaActual = indice;
+actualizarDetalle();
+
+// Cambiar vistas
+vistaCuadricula.style.display = 'none';
+vistaDetalle.style.display = 'block';
+contenedorDetalle.classList.add('mostrar');
+
+// Ir al inicio de la página
+window.scrollTo(0, 0);
+}
+
+function volverACuadricula() {
+vistaDetalle.style.display = 'none';
+vistaCuadricula.style.display = 'grid';
+}
+
+function recetaAnterior() {
+recetaActual--;
+if (recetaActual < 0) {
+    recetaActual = totalRecetas - 1;
+}
+actualizarDetalle();
+window.scrollTo(0, 0);
+}
+
+function recetaSiguiente() {
+recetaActual++;
+if (recetaActual >= totalRecetas) {
+    recetaActual = 0;
+}
+actualizarDetalle();
+window.scrollTo(0, 0);
+}
+
+function actualizarDetalle() {
+const nombresRecetas = Object.keys(recetas);
+const nombre = nombresRecetas[recetaActual];
+const receta = recetas[nombre];
+
+// Actualizar título
+tituloReceta.textContent = nombre;
+
+// Actualizar imagen
+imagenReceta.src = receta.Imagen;
+imagenReceta.alt = nombre;
+
+// Actualizar información
+infoDuracion.innerHTML = `<strong>⏱️</strong> ${receta.Info.duracion}`;
+infoPorciones.innerHTML = `<strong>👥</strong> ${receta.Info.porciones}`;
+
+// Agregar información adicional si existe
+let infoExtra = '';
+if (receta.Info.dificultad) {
+    infoExtra += `<div class="info-item"><strong>⚡ Dificultad: </strong> ${receta.Info.dificultad}</div>`;
+}
+if (receta.Info.categoria) {
+    infoExtra += `<div class="info-item"><strong>📂</strong> ${receta.Info.categoria}</div>`;
+}
+if (receta.Info.calorias) {
+    infoExtra += `<div class="info-item"><strong>🔥 Calorias: </strong> ${receta.Info.calorias}</div>`;
+}
+
+// Agregar información adicional al contenedor
+if (infoExtra) {
+    const contenedorInfo = document.querySelector('.info-receta');
+    contenedorInfo.innerHTML = infoDuracion.outerHTML + infoPorciones.outerHTML + infoExtra;
+}
+
+// Actualizar ingredientes
+listaIngredientes.innerHTML = '';
+receta.Ingredientes.forEach(ingrediente => {
+    const elemento = document.createElement('li');
+    elemento.textContent = ingrediente;
+    listaIngredientes.appendChild(elemento);
+});
+
+// Actualizar procedimiento
+listaProcedimiento.innerHTML = '';
+receta.Procedimiento.forEach(paso => {
+    const elemento = document.createElement('li');
+    elemento.textContent = paso;
+    listaProcedimiento.appendChild(elemento);
+});
+
+// Cambiar color de fondo si existe
+if (receta.color) {
+    contenedorDetalle.style.borderLeft = `5px solid ${receta.color}`;
+}
 }
