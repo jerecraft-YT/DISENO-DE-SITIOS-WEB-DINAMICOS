@@ -1,0 +1,212 @@
+{
+    "Belmond Hotel Monasterio": {
+        "Información General": {
+            "descripcion": "Lujoso hotel de 5 estrellas ubicado en un monasterio colonial del siglo XVI declarado monumento nacional. Ofrece una experiencia única que combina historia, arte y el máximo confort, con un sistema de oxígeno enriquecido para ayudar con el mal de altura.",
+            "categoria": "Lujo - 5 Estrellas",
+            "inauguracion": "1995 (como hotel)",
+            "estilo_arquitectonico": "Colonial / Monasterio restaurado",
+            "certificaciones": ["Relais & Châteaux", "Miembro de Leading Hotels of the World"]
+        },
+        "Ubicación y Acceso": {
+            "ubicacion_exacta": "Calle Palacio 136, Plazoleta Nazarenas, a 2 cuadras de la Plaza de Armas de Cusco.",
+            "como_llegar_desde_aeropuerto": "Taxi (20-25 minutos) o traslado privado del hotel (coordinado con anticipación).",
+            "zona": "Centro Histórico - Zona Tranquila",
+            "cercania_principales_atractivos": "Plaza de Armas (2 min), Coricancha (5 min), Museo de Arte Precolombino (1 min)"
+        },
+        "Servicios y Comodidades": [
+            "Sistema de oxígeno enriquecido en todas las habitaciones y áreas comunes.",
+            "Dos restaurantes gourmet: 'Illariy' (cocina peruana de autor) y el 'Refectorio' (desayuno buffet en antiguo comedor monástico).",
+            "Capilla barroca original con conciertos privados.",
+            "Spa con tratamientos andinos y sauna.",
+            "Patios y jardines interiores con fuentes coloniales.",
+            "Servicio de conserjería 24 horas y guías turísticos privados."
+        ],
+        "Imagen": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/589866028.jpg?k=aecdef92739e0abe544237bb76820f58d43f7c4d132f171299a9ef722f5a3db0&o=",
+        "color_tema": "#8B4513"
+    },
+
+    "Palacio del Inka, a Luxury Collection Hotel": {
+        "Información General": {
+            "descripcion": "Majestuoso hotel de lujo situado en un palacio inca del siglo XV que posteriormente fue la mansión del conquistador español Francisco Pizarro. Combina 500 años de historia con instalaciones modernas y un servicio excepcional.",
+            "categoria": "Lujo - 5 Estrellas",
+            "inauguracion": "2012 (como Luxury Collection)",
+            "estilo_arquitectonico": "Fusión Inca-Colonial",
+            "certificaciones": ["Marriott Luxury Collection", "Hoteles Históricos del Perú"]
+        },
+        "Ubicación y Acceso": {
+            "ubicacion_exacta": "Plazoleta Santo Domingo 259, frente al Coricancha.",
+            "como_llegar_desde_aeropuerto": "Taxi (15-20 minutos). El hotel ofrece limusina con reserva previa.",
+            "zona": "Centro Histórico - Zona Monumental",
+            "cercania_principales_atractivos": "Coricancha (frente), Plaza de Armas (7 min), Mercado de San Pedro (10 min)"
+        },
+        "Servicios y Comodidades": [
+            "Spa 'Willka' con ceremonias andinas ancestrales y piscina climatizada interior.",
+            "Restaurante 'Inti Raymi' especializado en cocina Novoandina con vista al Coricancha.",
+            "Bar 'Rumi' ubicado en lo que fue la capilla privada del palacio.",
+            "Centro de negocios y salones para eventos con capacidad hasta 300 personas.",
+            "Tours culturales privados guiados por historiadores del hotel.",
+            "Concierge especializado en organizar experiencias únicas en Cusco y Machu Picchu."
+        ],
+        "Imagen": "https://cache.marriott.com/content/dam/marriott-renditions/CUZLC/cuzlc-courtyard-4894-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+        "color_tema": "#DAA520"
+    },
+
+    "Aranwa Cusco Boutique Hotel": {
+        "Información General": {
+            "descripcion": "Exclusivo hotel boutique de 5 estrellas ubicado en una casona colonial del siglo XVI cuidadosamente restaurada. Destaca por su colección de arte colonial y sus amplias suites con jacuzzi y chimenea.",
+            "categoria": "Boutique de Lujo - 5 Estrellas",
+            "inauguracion": "2008",
+            "estilo_arquitectonico": "Casona Colonial Restaurada",
+            "certificaciones": ["Small Luxury Hotels of the World", "Aranwa Hotels & Spas"]
+        },
+        "Ubicación y Acceso": {
+            "ubicacion_exacta": "Calle San Juan de Dios 255, a una cuadra de la Plaza de Armas.",
+            "como_llegar_desde_aeropuerto": "Taxi (20 minutos). Traslado privado disponible.",
+            "zona": "Centro Histórico - Zona Comercial",
+            "cercania_principales_atractivos": "Plaza de Armas (1 min), Catedral (2 min), Calle Hatun Rumiyoc (3 min)"
+        },
+        "Servicios y Comodidades": [
+            "Todas las suites cuentan con jacuzzi, chimenea y sistema de oxígeno enriquecido.",
+            "Spa 'Aranwa' con piscina interior climatizada y tratamientos con productos andinos.",
+            "Restaurante 'Museo' que exhibe parte de la colección de arte virreinal del hotel.",
+            "Bar 'Claustro' en el patio principal con bebidas de autor.",
+            "Servicio de mayordomo personalizado en suites selectas.",
+            "Galeria de arte con más de 300 piezas de los siglos XVI al XIX."
+        ],
+        "Imagen": "https://www.aranwahotels.com/files-sbbasic/ba_aranwasresortsspas_pe/aranwa-cusco-espacios-13.jpg",
+        "color_tema": "#B8860B"
+    },
+
+    "Casa Andina Premium Cusco": {
+        "Información General": {
+            "descripcion": "Hotel de 4 estrellas ubicado en una casona colonial del siglo XVI que perteneció al almirante español Francisco Alderete Maldonado. Ofrece un equilibrio perfecto entre confort moderno y ambiente histórico, con excelente relación calidad-precio.",
+            "categoria": "Primera - 4 Estrellas",
+            "inauguracion": "2005",
+            "estilo_arquitectonico": "Casona Colonial Adaptada",
+            "certificaciones": ["Casa Andina Premium Collection", "Turismo Sostenible"]
+        },
+        "Ubicación y Acceso": {
+            "ubicacion_exacta": "Plazoleta de Limacpampa Chico 473, a 3 cuadras de la Plaza de Armas.",
+            "como_llegar_desde_aeropuerto": "Taxi (15 minutos) o transporte del aeropuerto.",
+            "zona": "Centro Histórico - Zona Residencial Tranquila",
+            "cercania_principales_atractivos": "Plaza de Armas (5 min), Museo Inka (2 min), Barrio de San Blas (8 min)"
+        },
+        "Servicios y Comodidades": [
+            "Patios interiores con fuentes y jardines típicos de las casonas cusqueñas.",
+            "Restaurante 'Cuchara de Palo' con cocina peruana contemporánea.",
+            "Bar con terraza que ofrece vistas panorámicas de los tejados del Cusco.",
+            "Sala de lectura con biblioteca especializada en historia inca y colonial.",
+            "Servicio de té de coca todas las tardes en los patios.",
+            "WiFi gratuito en todas las instalaciones y business center."
+        ],
+        "Imagen": "https://media-cdn.tripadvisor.com/media/photo-s/27/59/0e/18/casa-andina-premium-cusco.jpg",
+        "color_tema": "#556B2F"
+    },
+
+    "Hotel San Agustin Internacional": {
+        "Información General": {
+            "descripcion": "Hotel de 3 estrellas con excelente ubicación y servicio confiable, ideal para viajeros que buscan comodidad y funcionalidad a precios accesibles. Parte de una cadena peruana con gran trayectoria en el país.",
+            "categoria": "Turista Superior - 3 Estrellas",
+            "inauguracion": "1998 (renovado en 2018)",
+            "estilo_arquitectonico": "Funcional Moderno",
+            "certificaciones": ["Cadena San Agustin", "Certificado de Calidad Turística"]
+        },
+        "Ubicación y Acceso": {
+            "ubicacion_exacta": "Calle San Agustin 316, esquina con Maruri.",
+            "como_llegar_desde_aeropuerto": "Taxi (10-15 minutos). Transporte económico disponible.",
+            "zona": "Centro - Zona Comercial y de Servicios",
+            "cercania_principales_atractivos": "Plaza de Armas (3 min), Coricancha (8 min), Estación de tren a Machu Picchu (10 min en taxi)"
+        },
+        "Servicios y Comodidades": [
+            "Restaurante 'Inti Killa' con desayuno buffet incluido y menú a la carta.",
+            "Bar-cafetería con servicio 24 horas.",
+            "Sala de reuniones para hasta 50 personas.",
+            "Servicio de lavandería y guardaequipaje.",
+            "Recepción 24 horas con personal bilingüe (español-inglés).",
+            "Estacionamiento seguro (con costo adicional)."
+        ],
+        "Imagen": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/32166385.jpg?k=e366020e0a283bf476b7151e46e68dfc31bc6fcdc9f606b019cc4e1f490190fc&o=",
+        "color_tema": "#4682B4"
+    },
+
+    "Kokopelli Hostel Cusco": {
+        "Información General": {
+            "descripcion": "Hostel vibrante y moderno especialmente diseñado para viajeros jóvenes y mochileros. Ofrece una atmósfera social única con actividades diarias, ambiente internacional y excelentes instalaciones comunes.",
+            "categoria": "Hostel / Albergue",
+            "inauguracion": "2014",
+            "estilo_arquitectonico": "Moderno Juvenil / Diseño Contemporáneo",
+            "certificaciones": ["Hostelworld Excellence Award", "Sustainable Hostel"]
+        },
+        "Ubicación y Acceso": {
+            "ubicacion_exacta": "Calle Quera 270, a media cuadra de la Plaza de Armas.",
+            "como_llegar_desde_aeropuerto": "Taxi (15 minutos). Ofrecen información para transporte económico.",
+            "zona": "Centro Histórico - Zona de Vida Nocturna",
+            "cercania_principales_atractivos": "Plaza de Armas (1 min), Plaza Regocijo (2 min), Mercado de San Pedro (5 min)"
+        },
+        "Servicios y Comodidades": [
+            "Dormitorios compartidos (mixtos y solo mujeres) y habitaciones privadas disponibles.",
+            "Bar en la azotea ('The Roof') con vistas espectaculares y música en vivo.",
+            "Sala de juegos con mesa de billar, futbolín y juegos de mesa.",
+            "Cocina totalmente equipada para huéspedes.",
+            "Actividades diarias gratuitas (clases de salsa, noches de juegos, city tours).",
+            "Información turística especializada y venta de tours a precios de agencia.",
+            "Desayuno continental incluido y happy hour todas las noches."
+        ],
+        "Imagen": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/720648276.jpg?k=805c9bd41744a718e723562512eff09c9f6ec1479997b92d776d859f866d231a&o=",
+        "color_tema": "#9370DB"
+    },
+
+    "Tierra Viva Cusco Plaza": {
+        "Información General": {
+            "descripcion": "Hotel de negocios y turismo funcional de 3 estrellas que ofrece todas las comodidades esenciales en un edificio moderno con excelente ubicación. Perfecto para viajeros que priorizan practicidad y buenos precios.",
+            "categoria": "Negocios/Turista - 3 Estrellas",
+            "inauguracion": "2015",
+            "estilo_arquitectonico": "Moderno Funcional",
+            "certificaciones": ["Cadena Tierra Viva", "Tripadvisor Certificate of Excellence"]
+        },
+        "Ubicación y Acceso": {
+            "ubicacion_exacta": "Calle Saphi 766, a 5 minutos caminando de la Plaza de Armas.",
+            "como_llegar_desde_aeropuerto": "Taxi (10-12 minutos).",
+            "zona": "Centro - Zona Residencial Tranquila",
+            "cercania_principales_atractivos": "Plaza de Armas (5 min), Barrio de San Blas (8 min), Museo de Arte Contemporáneo (3 min)"
+        },
+        "Servicios y Comodidades": [
+            "Habitaciones con calefacción y ventanas aislantes acústicas.",
+            "Desayuno buffet americano/peruano incluido.",
+            "WiFi de alta velocidad gratuito en todas las áreas.",
+            "Business center con computadoras e impresora.",
+            "Servicio de lavandería express.",
+            "Recepción 24 horas con depósito de seguridad.",
+            "Información turística y venta de tickets para atracciones."
+        ],
+        "Imagen": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/45/cd/be/tierra-viva-cusco-centro.jpg?w=900&h=500&s=1",
+        "color_tema": "#708090"
+    },
+
+    "El Mercado Tunqui Hotel": {
+        "Información General": {
+            "descripcion": "Hotel boutique temático de 4 estrellas inspirado en los mercados tradicionales andinos. Cada habitación está decorada representando un producto típico peruano (papa, maíz, cacao, etc.), ofreciendo una experiencia cultural única.",
+            "categoria": "Boutique Temático - 4 Estrellas",
+            "inauguracion": "2019",
+            "estilo_arquitectonico": "Contemporáneo Andino / Diseño Conceptual",
+            "certificaciones": ["Hoteles Temáticos del Perú", "Diseño Sostenible"]
+        },
+        "Ubicación y Acceso": {
+            "ubicacion_exacta": "Calle Tandapata 260, Barrio de San Blas.",
+            "como_llegar_desde_aeropuerto": "Taxi (20 minutos debido a calles empedradas en San Blas).",
+            "zona": "Barrio de San Blas - Zona Artística",
+            "cercania_principales_atractivos": "Plaza San Blas (2 min), Mirador de San Blas (1 min), Talleres de artesanos (en la misma calle)"
+        },
+        "Servicios y Comodidades": [
+            "Habitaciones temáticas con diseño único y amenities de productos naturales peruanos.",
+            "Restaurante 'Mercado' que sirve platos con ingredientes de pequeños productores locales.",
+            "Bar 'Chichería' especializado en chichas y cócteles con productos andinos.",
+            "Talleres culturales gratuitos (tejido, cerámica, cocina peruana básica).",
+            "Terraza panorámica con las mejores vistas de Cusco.",
+            "Tienda de productos de comercio justo hechos por artesanos del barrio.",
+            "Servicio de té de coca con explicación cultural todas las tardes."
+        ],
+        "Imagen": "https://media-cdn.tripadvisor.com/media/photo-s/10/5f/8f/29/el-mercado.jpg",
+        "color_tema": "#CD853F"
+    }
+}

@@ -1,0 +1,125 @@
+{
+    "Machu Picchu": {
+        "Información General": {
+            "descripcion": "La ciudadela inca más famosa del mundo, enclavada en lo alto de una montaña entre los Andes y la Amazonía. Declarada Patrimonio de la Humanidad por la UNESCO y una de las Nuevas Siete Maravillas del Mundo Moderno.",
+            "tipo": "Ciudadela Inca / Sitio Arqueológico",
+            "época": "Siglo XV (Imperio Inca)",
+            "altitud": "2,430 msnm",
+            "patrimonio_unesco": true
+        },
+        "Ubicación y Acceso": {
+            "ubicacion_exacta": "Distrito de Machupicchu, provincia de Urubamba, a 80 km al noroeste del Cusco.",
+            "como_llegar": "1) Tren desde Cusco u Ollantaytambo hasta Aguas Calientes + bus. 2) Camino Inca (trekking de 4 días).",
+            "boleto_turistico": "NO está incluido en el Boleto Turístico del Cusco. La entrada se compra por separado, con cupos limitados y es obligatoria la reserva anticipada. Hay diferentes circuitos.",
+            "horario_recomendado": "Ingreso por turnos (mañana o tarde). Se recomienda llegar a primera hora para evitar nubes."
+        },
+        "Atractivos Principales": [
+            "Intihuatana: 'Reloj solar' o piedra ritual para medir el tiempo y las estaciones.",
+            "Templo del Sol: Edificación semicircular con ventanas trapezoidales y fina mampostería.",
+            "Templo de las Tres Ventanas: Ofrece una vista panorámica espectacular de las montañas.",
+            "Habitación del Guardian: El punto clásico para la foto postal de toda la ciudadela.",
+            "Puerta del Sol (Inti Punku): Antiguo acceso principal y mirador para los que hacen el Camino Inca."
+        ],
+        "Imagen": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Machu_Picchu%2C_Peru.jpg",
+        "color_tema": "#2F4F4F"
+    },
+
+    "Sacsayhuamán": {
+        "Información General": {
+            "descripcion": "Majestuosa fortaleza ceremonial inca, famosa por sus enormes muros de piedra caliza ensamblados con increíble precisión. El lugar donde se libra la batalla final de la resistencia inca y hoy escenario principal del Inti Raymi.",
+            "tipo": "Fortaleza / Sitio Arqueológico",
+            "época": "Siglo XV (Imperio Inca, época de Pachacútec)",
+            "altitud": "3,701 msnm",
+            "patrimonio_unesco": true
+        },
+        "Ubicación y Acceso": {
+            "ubicacion_exacta": "A 2 km al norte de la Plaza de Armas del Cusco.",
+            "como_llegar": "Taxi (10 min) o caminata cuesta arriba (40 min) desde el centro. La caminata requiere aclimatación.",
+            "boleto_turistico": "SÍ está incluido en el Boleto Turístico del Cusco (Circuito I: Ciudad).",
+            "horario_recomendado": "Mañana o mediodía, cuando la luz es mejor para fotos. Los domingos suele haber más gente local."
+        },
+        "Atractivos Principales": [
+            "Los Tres Muros en Zigzag: Representan los dientes del puma, cuya forma tenía la ciudad del Cusco.",
+            "La Piedra de 12 Ángulos (en un muro interior): Aunque la más famosa está en el centro, aquí hay otra impresionante.",
+            "Rodadero: Una gran formación rocosa natural utilizada como tobogán ritual.",
+            "Mirador: Ofrece una vista panorámica incomparable de la ciudad del Cusco.",
+            "Anfiteatro: Área donde se celebra la ceremonia del Inti Raymi cada 24 de junio."
+        ],
+        "Imagen": "https://www.peru.travel/Contenido/General/Imagen/es/41/1.1/Sacsayhuaman.jpg",
+        "color_tema": "#556B2F"
+    },
+
+    "Valle Sagrado de los Incas (Urubamba)": {
+        "Información General": {
+            "descripcion": "Fértil valle recorrido por el río Urubamba, que fue el corazón agrícola, espiritual y estratégico del Imperio Inca. Alberga numerosos pueblos pintorescos y sitios arqueológicos de primer orden, con un clima más benigno y una altitud menor que Cusco.",
+            "tipo": "Valle / Ruta Turística Integral",
+            "época": "Centro de desarrollo desde el período pre-Inca.",
+            "altitud_promedio": "2,800 msnm",
+            "patrimonio_unesco": false
+        },
+        "Ubicación y Acceso": {
+            "ubicacion_exacta": "Entre los pueblos de Pisac y Ollantaytambo, al noreste de la ciudad del Cusco.",
+            "como_llegar": "Tour organizado, taxi privado o transporte público (colectivos) desde Cusco. El recorrido completo toma un día.",
+            "boleto_turistico": "Los sitios arqueológicos del Valle (Pisac, Ollantaytambo, Chinchero, Moray) SÍ están incluidos en el Boleto Turístico del Cusco (Circuito III: Valle Sagrado).",
+            "horario_recomendado": "Todo el día. Se recomienda salir temprano de Cusco para aprovechar la luz y evitar aglomeraciones en los mercados."
+        },
+        "Atractivos Principales (se visitan por separado)": [
+            "Pisac: Impresionantes andenes y ruinas en la montaña, y un famoso mercado artesanal los domingos, martes y jueves.",
+            "Ollantaytambo: 'Pueblo inca vivo' con calles empedradas y una gran fortaleza-templo que domina el valle. Punto de partida del tren a Machu Picchu.",
+            "Chinchero: Pueblo conocido por sus tejidos tradicionales, iglesia colonial y restos arqueológicos.",
+            "Moray: Anfiteatro natural de terrazas circulares concéntricas, usado como laboratorio agrícola inca.",
+            "Salineras de Maras: Miles de pozas de sal rosada explotadas desde la época inca, formando un paisaje surrealista."
+        ],
+        "Imagen": "https://www.boletomachupicchu.com/gutblt/wp-content/images/cusco-sacred-valley-incas.jpg",
+        "color_tema": "#6B8E23"
+    },
+
+    "Barrio de San Blas": {
+        "Información General": {
+            "descripcion": "El barrio de los artesanos, famoso por sus calles empinadas y adoquinadas, arquitectura colonial, talleres de arte y las mejores vistas de la ciudad. Es el lugar ideal para comprar artesanía de calidad y disfrutar de una atmósfera bohemia y tranquila.",
+            "tipo": "Barrio Histórico / Cultural",
+            "época": "Desarrollo colonial sobre cimientos incas.",
+            "altitud": "3,450 msnm aprox. (más alto que la Plaza de Armas)",
+            "patrimonio_unesco": true
+        },
+        "Ubicación y Acceso": {
+            "ubicacion_exacta": "Al noreste de la Plaza de Armas, subiendo por la cuesta de San Blas.",
+            "como_llegar": "A pie desde la Plaza de Armas. La subida es empinada, se recomienda caminar despacio por la altitud.",
+            "boleto_turistico": "El acceso al barrio es libre. Algunos talleres o la iglesia pueden tener un costo simbólico.",
+            "horario_recomendado": "Tarde, cuando los talleres están abiertos y la luz del atardecer ilumina las calles. También por la mañana para ver a los artesanos trabajar."
+        },
+        "Atractivos Principales": [
+            "Plaza San Blas: Pequeña y acogedora plaza central del barrio, punto de encuentro.",
+            "Iglesia de San Blas: Pequeña iglesia colonial que alberga un púlpito de madera tallada de una sola pieza, considerado una obra maestra del arte barroco.",
+            "Talleres de Artesanos: Numerosos talleres de cerámica, tallado en madera, pintura y textiles donde se puede ver trabajar a los maestros.",
+            "Calle Hatun Rumiyoq: En su inicio, famosa por albergar la Piedra de los 12 Ángulos (aunque esta pertenece al Palacio Arzobispal, en la parte baja).",
+            "Miradores: Desde varias calles y plazuelas se obtienen vistas panorámicas espectaculares de los techos rojos de Cusco."
+        ],
+        "Imagen": "https://blog.incarail.com/wp-content/uploads/2024/10/CUESTA-1.jpg",
+        "color_tema": "#B8860B"
+    },
+
+    "Montaña de 7 Colores (Vinicunca)": {
+        "Información General": {
+            "descripcion": "Famosa formación montañosa cuyas laderas presentan rayas de colores intensos (rojo, verde, amarillo, morado, etc.) debido a la compleja mineralogía de sus suelos. Se ha convertido en uno de los destinos de trekking más populares y fotogénicos de la región.",
+            "tipo": "Atractivo Natural / Trekking",
+            "época": "Formación geológica antigua. Descubierta para el turismo masivo en la última década.",
+            "altitud": "5,200 msnm (mirador principal)",
+            "patrimonio_unesco": false
+        },
+        "Ubicación y Acceso": {
+            "ubicacion_exacta": "En los Andes del distrito de Pitumarca, provincia de Canchis, a unos 100 km al sureste de Cusco.",
+            "como_llegar": "Tour organizado en van (3-4h ida). Incluye transporte hasta el inicio de la caminata (4,600 msnm), que dura aproximadamente 1.5-2h de subida.",
+            "boleto_turistico": "NO está incluido. Se paga una entrada comunitaria (aproximadamente 10-15 soles) al llegar.",
+            "horario_recomendado": "Salir de Cusco muy temprano (4-5 am) para llegar antes del mediodía, cuando hay mejor luz y menos probabilidad de nubes o lluvia de tarde."
+        },
+        "Atractivos Principales": [
+            "Vista de la Montaña Arcoíris: El espectáculo natural principal, mejor apreciado en un día soleado.",
+            "Paisaje Andino: Vista de glaciares como el Ausangate (6,384 msnm), la montaña sagrada más alta de la región.",
+            "Cultura Local: Interacción con las comunidades pastoriles de la zona.",
+            "Reto Personal: La caminata de alta altitud es una experiencia física y de superación."
+        ],
+        "Imagen": "https://www.peru.travel/Contenido/General/Imagen/es/302/1.1/Vinicunca.jpg",
+        "color_tema": "#9370DB"
+    }
+}

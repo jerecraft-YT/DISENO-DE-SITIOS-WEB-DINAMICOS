@@ -1,0 +1,295 @@
+        /* Estilos generales - Mismo que tus otras apps */
+        body {
+            background-image: url("../platos/css/Iglesia-de-la-Compania-de-Jesus-Cusco.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+        }
+        
+        /* Fondo desenfocado */
+        .fondo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../platos/css/Iglesia-de-la-Compania-de-Jesus-Cusco.webp");
+            background-size: cover;
+            filter: blur(5px);
+            z-index: -1;
+        }
+        
+        /* Título principal */
+        .titulo {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+            font-size: 42px;
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .subtitulo {
+            text-align: center;
+            color: #f0f0f0;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+            font-size: 20px;
+            margin-bottom: 40px;
+            padding: 0 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        
+        /* Contenedor principal */
+        .contenedor-principal {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Cuadrícula de aplicaciones */
+        .cuadricula {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+        
+        /* Tarjetas de aplicaciones */
+        .tarjeta-app {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .tarjeta-app:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+            border-color: #0078ff;
+        }
+        
+        /* Encabezado de tarjeta */
+        .tarjeta-encabezado {
+            background: linear-gradient(135deg, #0078ff, #005fcc);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .tarjeta-icono {
+            font-size: 60px;
+            margin-bottom: 15px;
+            display: block;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .tarjeta-titulo {
+            font-size: 26px;
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        /* Contenido de tarjeta */
+        .tarjeta-contenido {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .tarjeta-descripcion {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+        
+        /* Botones principales */
+        .btn-principal {
+            background: linear-gradient(to right, #28a745, #218838);
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            display: block;
+            margin-top: auto;
+            box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+        }
+        
+        .btn-principal:hover {
+            background: linear-gradient(to right, #218838, #1e7e34);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(40, 167, 69, 0.4);
+        }
+        
+        /* Colores específicos para cada app */
+        .app-platos .tarjeta-encabezado {
+            background: linear-gradient(135deg, #dc3545, #c82333);
+        }
+        
+        .app-platos .btn-principal {
+            background: linear-gradient(to right, #dc3545, #c82333);
+            box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
+        }
+        
+        .app-platos .btn-principal:hover {
+            background: linear-gradient(to right, #c82333, #bd2130);
+            box-shadow: 0 6px 12px rgba(220, 53, 69, 0.4);
+        }
+        
+        .app-lugares .tarjeta-encabezado {
+            background: linear-gradient(135deg, #0078ff, #005fcc);
+        }
+        
+        .app-lugares .btn-principal {
+            background: linear-gradient(to right, #0078ff, #005fcc);
+            box-shadow: 0 4px 8px rgba(0, 120, 255, 0.3);
+        }
+        
+        .app-lugares .btn-principal:hover {
+            background: linear-gradient(to right, #005fcc, #004ba0);
+            box-shadow: 0 6px 12px rgba(0, 120, 255, 0.4);
+        }
+        
+        .app-hoteles .tarjeta-encabezado {
+            background: linear-gradient(135deg, #6f42c1, #5a32a3);
+        }
+        
+        .app-hoteles .btn-principal {
+            background: linear-gradient(to right, #6f42c1, #5a32a3);
+            box-shadow: 0 4px 8px rgba(111, 66, 193, 0.3);
+        }
+        
+        .app-hoteles .btn-principal:hover {
+            background: linear-gradient(to right, #5a32a3, #4a2b8a);
+            box-shadow: 0 6px 12px rgba(111, 66, 193, 0.4);
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        
+        /* Animaciones */
+        .tarjeta-app {
+            animation: aparecer 0.6s ease-out;
+        }
+        
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Retrasos para animación escalonada */
+        .tarjeta-app:nth-child(1) { animation-delay: 0.1s; }
+        .tarjeta-app:nth-child(2) { animation-delay: 0.2s; }
+        .tarjeta-app:nth-child(3) { animation-delay: 0.3s; }
+        
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .cuadricula {
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .titulo {
+                font-size: 32px;
+                margin: 20px 0;
+                padding: 15px;
+            }
+            
+            .subtitulo {
+                font-size: 16px;
+                margin-bottom: 30px;
+                padding: 10px;
+            }
+            
+            .cuadricula {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 10px;
+            }
+            
+            .tarjeta-app {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            
+            .botones-secundarios {
+                flex-direction: column;
+            }
+            
+            .btn-secundario {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .titulo {
+                font-size: 28px;
+            }
+            
+            .tarjeta-icono {
+                font-size: 50px;
+            }
+            
+            .tarjeta-titulo {
+                font-size: 22px;
+            }
+            
+            .tarjeta-descripcion {
+                font-size: 14px;
+            }
+            
+            .btn-principal {
+                padding: 12px 20px;
+                font-size: 16px;
+            }
+        }

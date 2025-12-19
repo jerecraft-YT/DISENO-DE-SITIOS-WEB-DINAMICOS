@@ -1,0 +1,369 @@
+{
+    "Chiri Uchu": {
+        "Info": {
+            "duracion": "60min",
+            "porciones": "6 porciones",
+            "dificultad": "Media-Alta",
+            "categoria": "Plato Principal",
+            "calorias": "420 por porción",
+            "descripcion": "Plato ceremonial frío del Corpus Christi cusqueño, símbolo de la fusión andino-española"
+        },
+        "Ingredientes": [
+            "1 gallina entera o pollo",
+            "200 g de charqui (carne de llama o res seca)",
+            "4 chorizos cusqueños",
+            "4 huevos duros",
+            "2 quesos andinos (queso fresco o queso serrano)",
+            "1 taza de maíz blanco gigante (mote) cocido",
+            "1 taza de cochayuyo (alga deshidratada) remojado",
+            "2 rocotos frescos",
+            "1 cebolla roja en pluma",
+            "1 taza de cancha serrana tostada",
+            "1 cucharada de ají mirasol molido",
+            "1 limón",
+            "Sal al gusto",
+            "Culantro picado para decorar"
+        ],
+        "Procedimiento": [
+            "Cocinar la gallina o pollo en agua con sal hasta que esté tierno. Desmenuzar la carne.",
+            "Remojar el charqui en agua tibia por 30 minutos para desalar, luego cocinar por 20 minutos y desmenuzar.",
+            "Cocinar los chorizos cusqueños en agua hirviendo por 15 minutos, luego cortar en rodajas.",
+            "Cocer el cochayuyo en agua por 10 minutos hasta que esté tierno, escurrir y picar.",
+            "Cortar los quesos en láminas, los huevos duros en rodajas y los rocotos en tiras finas.",
+            "En un plato grande de presentación, organizar en sectores: la gallina desmenuzada, charqui, chorizo, queso, huevo, mote, cochayuyo y rocoto.",
+            "Decorar con cebolla en pluma, cancha serrana y culantro picado.",
+            "Servir frío o a temperatura ambiente, rociar con jugo de limón y espolvorear ají mirasol molido."
+        ],
+        "Imagen": "https://www.perurail.com/wp-content/uploads/2016/09/manco-capac-el-primer-inca_perurail.jpg",
+        "color": "#F5F5DC"
+    },
+
+    "Cuy Chactado": {
+        "Info": {
+            "duracion": "50min",
+            "porciones": "2-3 porciones",
+            "dificultad": "Media",
+            "categoria": "Plato Principal",
+            "calorias": "380 por porción",
+            "descripcion": "Cuy frito bajo una piedra (chactado), tradición milenaria de los andes cusqueños"
+        },
+        "Ingredientes": [
+            "1 cuy entero limpio (aproximadamente 1 kg)",
+            "4 papas amarillas medianas",
+            "2 dientes de ajo molidos",
+            "1 cucharada de ají panca molido",
+            "1 cucharadita de comino molido",
+            "1 rama de huacatay (hierba aromática andina)",
+            "Sal y pimienta al gusto",
+            "Aceite vegetal para freír",
+            "Ensalada de lechuga y tomate",
+            "Salsa criolla cusqueña (cebolla, rocoto, limón)"
+        ],
+        "Procedimiento": [
+            "Marinar el cuy con ajo, ají panca, comino, huacatay picado, sal y pimienta por al menos 2 horas.",
+            "Hervir las papas con cáscara hasta que estén tiernas, pelar y reservar.",
+            "En una sartén grande y pesada (preferiblemente de hierro), calentar abundante aceite.",
+            "Colocar el cuy abierto en forma de cruz, piel hacia abajo.",
+            "Poner una piedra lavada o un prensador pesado encima del cuy para aplanarlo mientras se fríe.",
+            "Freír a fuego medio por 15-20 minutos por lado, hasta que esté dorado y crujiente.",
+            "Retirar y escurrir en papel absorbente.",
+            "Servir el cuy entero sobre las papas hervidas, acompañado de ensalada y salsa criolla."
+        ],
+        "Imagen": "https://jameaperu.com/assets/images/cuy-chactado_800x534.webp",
+        "color": "#8B4513"
+    },
+
+    "Kapchi de Habas": {
+        "Info": {
+            "duracion": "40min",
+            "porciones": "4 porciones",
+            "dificultad": "Fácil",
+            "categoria": "Entrada",
+            "calorias": "280 por porción",
+            "descripcion": "Guiso espeso de habas con queso y huacatay, típico del Valle Sagrado"
+        },
+        "Ingredientes": [
+            "4 tazas de habas frescas peladas (o congeladas)",
+            "2 cebollas rojas picadas",
+            "3 dientes de ajo picados",
+            "1/2 taza de leche evaporada",
+            "200 g de queso fresco andino desmenuzado",
+            "1/4 taza de aceite vegetal",
+            "2 cucharadas de ají amarillo molido",
+            "1 rama de huacatay picada",
+            "1/2 taza de maní tostado molido",
+            "4 papas amarillas hervidas",
+            "Sal y pimienta al gusto",
+            "Arroz blanco (opcional)"
+        ],
+        "Procedimiento": [
+            "Blanquear las habas en agua hirviendo por 3 minutos, escurrir y reservar.",
+            "En una olla, calentar el aceite y sofreír la cebolla y ajo hasta que estén transparentes.",
+            "Agregar el ají amarillo molido y cocinar por 2 minutos.",
+            "Incorporar las habas, mezclar bien y cocinar por 5 minutos.",
+            "Añadir la leche evaporada, el maní molido y el huacatay. Cocinar a fuego lento por 10 minutos.",
+            "Agregar el queso desmenuzado y cocinar hasta que se derrita y espese la salsa.",
+            "Sazonar con sal y pimienta al gusto.",
+            "Servir caliente sobre papas hervidas, acompañado de arroz si se desea."
+        ],
+        "Imagen": "https://cdn0.recetasgratis.net/es/posts/1/0/9/capchi_de_habas_76901_orig.jpg",
+        "color": "#90EE90"
+    },
+
+    "Chairo": {
+        "Info": {
+            "duracion": "120min",
+            "porciones": "6 porciones",
+            "dificultad": "Media",
+            "categoria": "Sopa",
+            "calorias": "320 por porción",
+            "descripcion": "Sopa espesa y reconstituyente de la sierra cusqueña, con chuño y carnes"
+        },
+        "Ingredientes": [
+            "500 g de carne de res (cortada en cubos)",
+            "200 g de chalona (carne de cordero seca) remojada",
+            "1 taza de chuño negro remojado y picado",
+            "1 taza de mote (maíz blanco gigante) cocido",
+            "2 cebollas picadas",
+            "3 dientes de ajo picados",
+            "2 zanahorias en cubos",
+            "2 papas amarillas en cubos",
+            "1/2 taza de arvejas frescas",
+            "1 rama de hierbabuena",
+            "1 cucharada de ají panca molido",
+            "Comino al gusto",
+            "Sal y pimienta al gusto",
+            "Orégano seco"
+        ],
+        "Procedimiento": [
+            "En una olla grande, dorar la carne de res y chalona con un poco de aceite.",
+            "Agregar la cebolla y ajo, sofreír hasta que estén dorados.",
+            "Añadir el ají panca, comino, sal y pimienta. Cocinar por 5 minutos.",
+            "Cubrir con 3 litros de agua caliente y cocinar a fuego lento por 1 hora.",
+            "Incorporar las papas, zanahorias, arvejas y chuño. Cocinar por 30 minutos más.",
+            "Agregar el mote cocido y la hierbabuena. Cocinar por 15 minutos adicionales.",
+            "Rectificar la sazón y espolvorear orégano al servir.",
+            "Servir caliente en plato hondo, ideal para días fríos."
+        ],
+        "Imagen": "https://jameaperu.com/assets/images/sopa-chairo_800x534.webp",
+        "color": "#D2691E"
+    },
+
+    "Pepián de Cuy": {
+        "Info": {
+            "duracion": "70min",
+            "porciones": "4 porciones",
+            "dificultad": "Media",
+            "categoria": "Plato Principal",
+            "calorias": "400 por porción",
+            "descripcion": "Guiso espeso de cuy con maní y especias, versión cusqueña del pepián"
+        },
+        "Ingredientes": [
+            "1 cuy cortado en presas",
+            "1/2 taza de maní tostado y molido",
+            "1 cebolla roja picada",
+            "3 dientes de ajo picados",
+            "2 cucharadas de ají panca molido",
+            "1 rama de huacatay",
+            "1/2 taza de leche evaporada",
+            "2 papas amarillas hervidas",
+            "1/2 taza de arvejas frescas",
+            "1 zanahoria en rodajas",
+            "Aceite vegetal",
+            "Sal, comino y pimienta al gusto",
+            "Arroz blanco"
+        ],
+        "Procedimiento": [
+            "Sazonar las presas de cuy con sal, pimienta y comino.",
+            "En una olla, dorar las presas de cuy en aceite caliente. Retirar y reservar.",
+            "En el mismo aceite, sofreír la cebolla y ajo hasta que estén dorados.",
+            "Agregar el ají panca y cocinar por 3 minutos.",
+            "Incorporar el maní molido y mezclar bien.",
+            "Añadir 2 tazas de agua caliente, el huacatay picado y las presas de cuy.",
+            "Cocinar a fuego medio por 30 minutos, hasta que el cuy esté tierno.",
+            "Agregar las arvejas, zanahoria y leche evaporada. Cocinar por 10 minutos más.",
+            "Servir con papas hervidas y arroz blanco."
+        ],
+        "Imagen": "https://www.amarujourneyperu.com/blog/wp-content/uploads/pepian-de-cuy.webp",
+        "color": "#A0522D"
+    },
+
+    "Timpu o Puchero": {
+        "Info": {
+            "duracion": "90min",
+            "porciones": "6 porciones",
+            "dificultad": "Media",
+            "categoria": "Plato Principal",
+            "calorias": "450 por porción",
+            "descripcion": "Cocido cusqueño de carnes, verduras y frutas, tradición de Semana Santa"
+        },
+        "Ingredientes": [
+            "500 g de pecho de res",
+            "1/2 kg de costillas de cerdo",
+            "1 pollo entero en presas",
+            "4 chorizos cusqueños",
+            "4 papas blancas",
+            "2 camotes",
+            "2 peras",
+            "2 duraznos blancos",
+            "1 taza de garbanzos remojados",
+            "1 repollo cortado en gajos",
+            "1 taza de arroz",
+            "Hierbabuena",
+            "Sal y pimienta al gusto"
+        ],
+        "Procedimiento": [
+            "En una olla grande, cocinar las carnes (res, cerdo y pollo) en agua con sal por 45 minutos.",
+            "Agregar los chorizos, garbanzos y cocinar por 15 minutos más.",
+            "Incorporar las papas, camotes y repollo. Cocinar por 15 minutos.",
+            "En otra olla, cocinar el arroz por separado.",
+            "Pelar las frutas (peras y duraznos) y agregarlas a la olla principal por los últimos 10 minutos.",
+            "Para servir: colocar una porción de arroz en el plato, luego las carnes, verduras y frutas.",
+            "Verter un poco del caldo caliente y decorar con hierbabuena.",
+            "Acompañar con salsa de rocoto si se desea."
+        ],
+        "Imagen": "https://img-global.cpcdn.com/recipes/ce727c2912b6d336/680x781cq80/puchero-o-timpu-cusqueno-foto-principal.jpg",
+        "color": "#FFDAB9"
+    },
+
+    "Adobo Cusqueño": {
+        "Info": {
+            "duracion": "120min + marinado",
+            "porciones": "6 porciones",
+            "dificultad": "Fácil",
+            "categoria": "Plato Principal",
+            "calorias": "380 por porción",
+            "descripcion": "Guiso de cerdo adobado con chicha de jora, tradición dominical"
+        },
+        "Ingredientes": [
+            "2 kg de cerdo (pierna o lomo) en cubos",
+            "4 dientes de ajo molidos",
+            "2 cucharadas de ají panca molido",
+            "1 cucharada de comino molido",
+            "2 tazas de chicha de jora (o cerveza negra como alternativa)",
+            "1 cebolla roja en juliana",
+            "3 hojas de laurel",
+            "Orégano seco",
+            "Sal y pimienta al gusto",
+            "Papas hervidas",
+            "Arroz blanco"
+        ],
+        "Procedimiento": [
+            "Marinar la carne de cerdo con ajo, ají panca, comino, sal y pimienta por al menos 4 horas (idealmente toda la noche).",
+            "En una olla de barro si es posible, dorar la carne de cerdo en su propia grasa.",
+            "Agregar la cebolla y cocinar hasta que esté transparente.",
+            "Verter la chicha de jora (o cerveza) y agregar las hojas de laurel.",
+            "Cocinar a fuego lento por 1.5 a 2 horas, hasta que la carne esté tierna y el adobo reducido.",
+            "Espolvorear orégano al final.",
+            "Servir caliente con papas hervidas y arroz blanco."
+        ],
+        "Imagen": "https://cbctupay.com/wp-content/uploads/adobo-cusqueno-cusco.png",
+        "color": "#8B0000"
+    },
+
+    "Humitas Cusqueñas": {
+        "Info": {
+            "duracion": "60min",
+            "porciones": "8 unidades",
+            "dificultad": "Media",
+            "categoria": "Entrada/Acompañamiento",
+            "calorias": "250 por porción",
+            "descripcion": "Tamales dulces de maíz fresco envueltos en hojas de choclo, versión cusqueña"
+        },
+        "Ingredientes": [
+            "12 mazorcas de maíz fresco (choclo)",
+            "1 taza de azúcar",
+            "1/2 taza de mantequilla derretida",
+            "1 cucharadita de canela molida",
+            "1 cucharadita de anís en grano",
+            "1/2 taza de pasas rubias",
+            "1/4 taza de coco rallado",
+            "Sal al gusto",
+            "Hojas de choclo para envolver",
+            "Pabilo o tiras de hoja de choclo para amarrar"
+        ],
+        "Procedimiento": [
+            "Desgranar las mazorcas y moler los granos en batán o licuadora hasta obtener una pasta.",
+            "Mezclar la pasta de choclo con azúcar, mantequilla, canela, anís, pasas y coco rallado.",
+            "Sazonar con una pizca de sal.",
+            "Lavar bien las hojas de choclo y colocar 2 cucharadas de la mezcla en el centro de cada par de hojas.",
+            "Doblar las hojas formando paquetes rectangulares y amarrar con pabilo.",
+            "Colocar las humitas en una olla con agua hirviendo (que las cubra) y cocinar por 40 minutos.",
+            "Dejar reposar 10 minutos antes de servir.",
+            "Servir caliente, idealmente con queso fresco."
+        ],
+        "Imagen": "https://image-tc.galaxy.tf/wijpeg-dh3jlc3h04tv238eg5kuwq22d/humitas-gastronomia-cusco_wide.jpg?crop=0%2C94%2C1800%2C1013",
+        "color": "#FFFACD"
+    },
+
+    "Lawa de Choclo": {
+        "Info": {
+            "duracion": "45min",
+            "porciones": "4 porciones",
+            "dificultad": "Fácil",
+            "categoria": "Sopa",
+            "calorias": "280 por porción",
+            "descripcion": "Crema espesa de choclo fresco, platillo tradicional prehispánico"
+        },
+        "Ingredientes": [
+            "6 mazorcas de maíz fresco (choclo)",
+            "1 cebolla roja picada",
+            "2 dientes de ajo picados",
+            "1/4 taza de maní tostado molido",
+            "1/2 taza de leche evaporada",
+            "2 cucharadas de aceite vegetal",
+            "1 rama de huacatay",
+            "200 g de queso fresco desmenuzado",
+            "Sal y pimienta al gusto",
+            "Cancha serrana para decorar"
+        ],
+        "Procedimiento": [
+            "Desgranar las mazorcas y moler los granos hasta obtener una pasta.",
+            "En una olla, calentar el aceite y sofreír la cebolla y ajo hasta que estén dorados.",
+            "Agregar la pasta de choclo y cocinar por 10 minutos, revolviendo constantemente.",
+            "Incorporar el maní molido y 2 tazas de agua caliente. Cocinar por 15 minutos más.",
+            "Añadir la leche evaporada, huacatay picado y queso desmenuzado.",
+            "Cocinar a fuego lento por 10 minutos hasta que espese.",
+            "Sazonar con sal y pimienta.",
+            "Servir caliente decorado con cancha serrana y más huacatay picado."
+        ],
+        "Imagen": "https://i.ytimg.com/vi/nteuEttCWsM/maxresdefault.jpg",
+        "color": "#FFD700"
+    },
+
+    "Queso Kapchi": {
+        "Info": {
+            "duracion": "35min",
+            "porciones": "4 porciones",
+            "dificultad": "Fácil",
+            "categoria": "Entrada",
+            "calorias": "300 por porción",
+            "descripcion": "Guiso cremoso de queso andino con papas, típico de las comunidades cusqueñas"
+        },
+        "Ingredientes": [
+            "400 g de queso fresco andino en cubos",
+            "4 papas amarillas hervidas y cortadas",
+            "1 cebolla roja picada",
+            "2 dientes de ajo picados",
+            "1/2 taza de leche evaporada",
+            "1/4 taza de aceite vegetal",
+            "2 cucharadas de ají amarillo molido",
+            "1 rama de huacatay picada",
+            "1/2 taza de arvejas frescas",
+            "Sal y pimienta al gusto",
+            "Orégano seco para decorar"
+        ],
+        "Procedimiento": [
+            "En una sartén, calentar el aceite y sofreír la cebolla y ajo hasta que estén transparentes.",
+            "Agregar el ají amarillo molido y cocinar por 2 minutos.",
+            "Incorporar las arvejas y cocinar por 5 minutos.",
+            "Añadir la leche evaporada y cocinar a fuego bajo por 5 minutos.",
+            "Agregar los cubos de queso y mezclar suavemente hasta que comiencen a derretirse.",
+            "Incorporar el huacatay picado y sazonar con sal y pimienta.",
+            "Servir caliente sobre las papas hervidas.",
+            "Decorar con orégano seco y servir inmediatamente."
+        ],
+        "Imagen": "https://buenazo.cronosmedia.glr.pe/original/2021/11/03/6182bd0fdea6867d41727751.jpg",
+        "color": "#F0E68C"
+    }
+}
