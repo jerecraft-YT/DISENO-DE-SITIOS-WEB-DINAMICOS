@@ -19,7 +19,7 @@ cargarRecetas();
 
 async function cargarRecetas() {
 try {
-    const respuesta = await fetch('recetas.json');
+    const respuesta = await fetch('resources/recetas.json');
     recetas = await respuesta.json();
     iniciarApp();
 } catch (error) {
