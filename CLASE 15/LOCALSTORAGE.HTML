@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if (typeof (Storage) !="undefined"){
+            console.log(Storage)
+            let cursos = ["PHP ", "Python", "Java"]
+            localStorage.setItem("cursos",JSON.stringify(cursos))
+            console.log(localStorage.getItem("cursos"))
+
+            localStorage.ELLA="NO LA QUISE"
+            console.log(localStorage.getItem("canal"))
+            
+            localStorage.lenguaje="Java"
+            console.log(localStorage.getItem("lenguaje"))
+
+            //localStorage.clear()
+        } else {
+            console.log("NO ES COMPATIBLE")
+        }
+    </script>
+</body>
+</html>
